@@ -10,7 +10,7 @@ Classics 20 Project
 <body>
 <div id="passage"></div>
 
-<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="1" format="Snowman" format-version="1.3.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="0.6" format="Snowman" format-version="1.3.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
   color: white;
   background-color: #1d1d1d;
 }
@@ -25,7 +25,9 @@ a{
 
 
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.day = 1;
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">window.day = "morning"; //morning, day, night
 window.meat = 0;
 window.incense = 0;
 window.entrails = 0;
@@ -36,27 +38,42 @@ window.gold = 500;
 
 
 
-</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="578,253" size="100,100">Welcome page/Index
 
-[[Start Game |Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="578,403" size="100,100">Exposition - Your name is ...
 
-You&#39;re about to have a very [[busy day|Temple of Mars Ultor]]</tw-passagedata><tw-passagedata pid="3" name="Temple of Mars Ultor" tags="map" position="577,545" size="100,100">
-Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. Statues of great Roman leaders — Mars Ultor and Venus Gentrix, Aeneas and Romulus, Julius Caesar and Augustus — glare at you. 
+</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2482,730" size="100,100">Welcome page/Index
+
+[[Start Game |Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2491,880" size="100,100">Exposition - Your name is ...
+
+You&#39;re about to have a very [[busy day|Temple of Mars Ultor]]</tw-passagedata><tw-passagedata pid="3" name="Temple of Mars Ultor" tags="map" position="2485,1048" size="100,100">
+Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. Statues of great Roman Gods — Mars Ultor and Venus Gentrix — glare at you. 
 
 [[Take a closer look at the statues-&gt;Statues in the Temple of Mars Ultor]] 
 
-
 Bright light and loud voices are coming from the main entrance. It looks like The Forum of Augustus is already full of people. 
 
-[[Go outside|The Forum of Augustus]]</tw-passagedata><tw-passagedata pid="4" name="The Forum of Augustus" tags="" position="578,703" size="100,100">You can hear someone loudly selling something off to the side.
+&lt;div id=&quot;morning_time&quot;&gt;
+Rome has awaken.
+&lt;/div&gt;
 
-[[Wine Cart]]
+[[Go outside|The Forum of Augustus]]
 
-[[Temple of Mars Ultor]] 
+&lt;script&gt;
+if (window.day != &quot;morning&quot;) {
+	$(&quot;#morning_time&quot;).hide()
+}
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="The Forum of Augustus" tags="map" position="2493.6666666666665,1268.6666666666667" size="100,100">The Forum is full of people, light and sounds.
 
-[[Head out into the Forum Boarium |Forum Boarium]]
+Surrounded by marble collonade, people
 
-[[Take a walk out to the Suburba|Suburba]]</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="409,698" size="100,100">[[The Forum of Augustus]] </tw-passagedata><tw-passagedata pid="6" name="Tailor" tags="" position="1046,1042" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="7" name="Incense Store" tags="" position="789,868" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="8" name="Slave Shop" tags="" position="1211,731" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="9" name="Forum Boarium" tags="" position="1054,863" size="100,100">
+Senators, discussing important issues of war and peace, stroll casually to Curia for another gathering. 
+
+[[Take a closer look at the statues-&gt;Statues at Forum of Augustus]] 
+
+[[Head out into the Forum Romanum-&gt;Forum Romanum]]
+
+[[Return to the Temple-&gt;Temple of Mars Ultor]] 
+
+[[Take a walk out to the Suburba|Suburba]]</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="2770,1648" size="100,100">[[Forum Romanum]] </tw-passagedata><tw-passagedata pid="6" name="Tailor" tags="" position="2887,1853" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="7" name="Incense Store" tags="" position="2765,1852" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="8" name="Slave Shop" tags="" position="3172,1849" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="9" name="Forum Boarium" tags="" position="2955,1642" size="100,100">
 
 [[Villa| Patrician Villa]]
 
@@ -66,7 +83,7 @@ Bright light and loud voices are coming from the main entrance. It looks like Th
 
 [[Look over at the hawker|Slave Shop]]
 
-[[Head back into the forum |The Forum of Augustus]] </tw-passagedata><tw-passagedata pid="10" name="Butcher" tags="map" position="244,1081" size="100,100">The meat market assaults you with a glut of sensations. The smell of raw meat wafts over to you. The steady &quot;thwock&quot; of a butcher&#39;s knife drifts through the stalls. From their tops, you can spot carcasses hanging down, neatly packaged.
+[[Head back into the forum |Forum Romanum]] </tw-passagedata><tw-passagedata pid="10" name="Butcher" tags="map" position="1785,1611.3333333333333" size="100,100">The meat market assaults you with a glut of sensations. The smell of raw meat wafts over to you. The steady &quot;thwock&quot; of a butcher&#39;s knife drifts through the stalls. From their tops, you can spot carcasses hanging down, neatly packaged.
 
 You spot some refuse bins alongside the stalls. You&#39;re not sure about this, but you could probably take a peek inside. Who knows, you might find something you can use?
 
@@ -95,17 +112,17 @@ if(window.entrails&gt;0)
 	$(&quot;#entrails&quot;).hide();
 	$(&quot;#bins&quot;).text(&quot;But, you&#39;ve already rifled through them all. You&#39;re probably not going to find anything you haven&#39;t already.&quot;);
 }
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="Back Alley" tags="map dog" position="406,1081" size="100,100">The alley lies between two buildings, home to some sort of business or another. You try not to think about the particular nature of that business too much - nothing reputable operates in this part of the city. The alley somehow manages to look dark and dingy, even in the middle of the day.
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="11" name="Back Alley" tags="map dog" position="1953.3333333333333,1612.3333333333333" size="100,100">The alley lies between two buildings, home to some sort of business or another. You try not to think about the particular nature of that business too much - nothing reputable operates in this part of the city. The alley somehow manages to look dark and dingy, even in the middle of the day.
 
 You can hear something scuffling around towards the end of the alley.
 
 [[Edge closer towards the noise.|Dog Encounter 1]]
 
-[[Head back to the city |Suburba]]</tw-passagedata><tw-passagedata pid="12" name="Ager Romanus" tags="" position="640,952" size="100,100">[[Suburba]] </tw-passagedata><tw-passagedata pid="13" name="Brothel" tags="" position="616,1098" size="100,100">[[Suburba]] </tw-passagedata><tw-passagedata pid="14" name=" Patrician Villa" tags="" position="1215,913" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="15" name="Dog Encounter 1" tags="map" position="559,1239" size="100,100">You make your way past small piles of garbage and get closer to the back of the alley. As you draw closer, the scuffling seems to grow louder. Threateningly loud.
+[[Head back to the city |Suburba]]</tw-passagedata><tw-passagedata pid="12" name="Ager Romanus" tags="" position="2250.3333333333335,1610.3333333333333" size="100,100">[[Suburba]] </tw-passagedata><tw-passagedata pid="13" name="Brothel" tags="" position="2112.3333333333335,1611.3333333333333" size="100,100">[[Suburba]] </tw-passagedata><tw-passagedata pid="14" name=" Patrician Villa" tags="" position="3028,1853" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="15" name="Dog Encounter 1" tags="map" position="2145.3333333333335,1815.3333333333333" size="100,100">You make your way past small piles of garbage and get closer to the back of the alley. As you draw closer, the scuffling seems to grow louder. Threateningly loud.
 
 [[Press on!|Dog Encounter 2]]
 
-[[Retreat!|Back Alley]]</tw-passagedata><tw-passagedata pid="16" name="Dog Encounter 2" tags="map" position="417,1388" size="100,100">A red dog leaps out in front of you! It pauses, and cautiously sniffs the air.
+[[Retreat!|Back Alley]]</tw-passagedata><tw-passagedata pid="16" name="Dog Encounter 2" tags="map" position="1990.3333333333333,1813.3333333333333" size="100,100">A red dog leaps out in front of you! It pauses, and cautiously sniffs the air.
 
 &lt;div id=&quot;response&quot;&gt;It seems disinterested in what it finds, and backs into the trash.&lt;/div&gt;
 
@@ -121,7 +138,7 @@ if(meat&gt;0)
 	$(&quot;#offer&quot;).show();
 	$(&quot;#response&quot;).text(&quot;It perks up. Seems like it find something interesting!&quot;);
 }
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Meat" tags="item" position="307,1232" size="100,100">You received some raw meat! Maybe you&#39;ll have a friend that&#39;ll appreciate it.
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="17" name="Meat" tags="item" position="1866.3333333333333,1813.3333333333333" size="100,100">You received some raw meat! Maybe you&#39;ll have a friend that&#39;ll appreciate it.
 
 [[Head back to the meat market|Butcher]]
 
@@ -129,13 +146,13 @@ if(meat&gt;0)
 window.gold-=100;
 window.meat++;
 %&gt;
-</tw-passagedata><tw-passagedata pid="18" name="Entrails" tags="item" position="163,1231" size="100,100">You found some mysterious entrails! They aren&#39;t dog entrails, but how picky could Robigus could be, anyway?
+</tw-passagedata><tw-passagedata pid="18" name="Entrails" tags="item" position="1723.3333333333333,1811.3333333333333" size="100,100">You found some mysterious entrails! They aren&#39;t dog entrails, but how picky could Robigus could be, anyway?
 
 [[Head back to the meat market|Butcher]]
 
 &lt;%
 window.entrails++;
-%&gt;</tw-passagedata><tw-passagedata pid="19" name="Dog Encounter 3" tags="" position="417,1538" size="100,100">The dog eyes the meat you place onto the ground warily for a minute. Then, it pounces on it, devouring it hungrily.
+%&gt;</tw-passagedata><tw-passagedata pid="19" name="Dog Encounter 3" tags="" position="1989.3333333333333,1974.3333333333333" size="100,100">The dog eyes the meat you place onto the ground warily for a minute. Then, it pounces on it, devouring it hungrily.
 
 When it finishes, it looks up at you, muzzle a little bloody. When you start to move away, it begins to follow.
 
@@ -143,34 +160,34 @@ The dog has joined you!
 
 
 
-[[Start heading to the butcher|Butcher Dog Interlude]]</tw-passagedata><tw-passagedata pid="20" name="Bag of Incense" tags="map" position="1057,497" size="100,100">Inside you find old incense. Probably someone has forgotten them during the last ritual. Certainly they it not as good as the ones you can purchase in the city, but something is better than nothing.
+[[Start heading to the butcher|Butcher Dog Interlude]]</tw-passagedata><tw-passagedata pid="20" name="Bag of Old Incense" tags="map" position="2931,1052" size="100,100">Inside you find old incense. Probably someone has forgotten them during the last ritual. Certainly they it not as good as the ones you can purchase in the city, but something is better than nothing.
 
-[[Collect old incense-&gt;Incense]] 
+[[Collect old incense-&gt;Old Incense]] 
 
-[[Go out to the Forum-&gt;The Forum of Augustus]] </tw-passagedata><tw-passagedata pid="21" name="Statues in the Temple of Mars Ultor" tags="map" position="806,428" size="100,100">You walk by these silent models of excellence. 
+[[Return to the Temple-&gt;Temple of Mars Ultor]] </tw-passagedata><tw-passagedata pid="21" name="Statues in the Temple of Mars Ultor" tags="map" position="2816.6666666666665,939" size="100,100">You walk closer to the deities: powerful and magnificent protectors of Rome. 
 
 &lt;div id=&quot;bag&quot;&gt;
-Suddenly you notice a small bag, lying on the floor behind one of the statues. May be you can find something in it?
+Suddenly you notice a small bag, lying on the floor under Mars&#39;s statue. May be you can find something in it?
 
-&lt;p&gt;[[Look into the bag-&gt;Bag of Incense]]&lt;/p&gt;
+&lt;p&gt;[[Look into the bag-&gt;Bag of Old Incense]]&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;incense_obtained&quot;&gt;
-Life of Rome depended on them. Their actions changed the course of history and brought your country to the glory. Now, the fate of Rome lies on your shoulders. Who knows, but maybe someday you will stand among them?
-&lt;p&gt;[[Return to the Temple-&gt;Temple of Mars Ultor]]&lt;/p&gt;
-&lt;/div&gt;
+[[Return to the Temple-&gt;Temple of Mars Ultor]]
 
 &lt;script&gt;
-$(&quot;#incense_obtained&quot;).hide();
 if (window.incense &gt; 0) {
    $(&quot;#bag&quot;).hide();
-   $(&quot;#incense_obtained&quot;).show();
 }
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="22" name="Incense" tags="" position="978,658" size="100,100">You have received old incense. It will do the job for now, but you should find something better if you can.
+</tw-passagedata><tw-passagedata pid="22" name="Old Incense" tags="map" position="2796,1168" size="100,100">You have received old incense. It will do the job for now, but you should find something better if you can.
 &lt;%window.incense++%&gt;
 
-[[Go out to the Forum-&gt;The Forum of Augustus]] </tw-passagedata><tw-passagedata pid="23" name="Butcher Dog Interlude" tags="" position="245,1528" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="24" name="Untitled Passage" tags="" position="21,152" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage 1" tags="" position="146,161" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="Untitled Passage 2" tags="" position="21,275" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 3" tags="" position="150,300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="Untitled Passage 4" tags="" position="749,296" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="Untitled Passage 5" tags="" position="272,162" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Untitled Passage 6" tags="" position="246,473" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Untitled Passage 7" tags="" position="18,1115" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Untitled Passage 8" tags="" position="26,578" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Untitled Passage 9" tags="" position="130,445" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Untitled Passage 10" tags="" position="747,171" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Untitled Passage 11" tags="" position="863,49" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="Untitled Passage 12" tags="" position="746,35" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Untitled Passage 13" tags="" position="619,61" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="Untitled Passage 14" tags="" position="476,48" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Untitled Passage 15" tags="" position="327,28" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Untitled Passage 16" tags="" position="177,13" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Untitled Passage 17" tags="" position="48,15" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Untitled Passage 18" tags="" position="25,1243" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Untitled Passage 19" tags="" position="10,983" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Untitled Passage 20" tags="" position="245,728" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Untitled Passage 21" tags="" position="16,843" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage 22" tags="" position="138,722" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Untitled Passage 23" tags="" position="19,726" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="Untitled Passage 24" tags="" position="424,183" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="49" name="Untitled Passage 25" tags="" position="394,478" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Untitled Passage 26" tags="" position="419,316" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 27" tags="" position="15,445" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Untitled Passage 28" tags="" position="288,587" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 29" tags="" position="158,574" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 30" tags="" position="288,300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="55" name="Suburba" tags="" position="463,875" size="100,100">[[Butcher]]
+[[Return back-&gt;Temple of Mars Ultor]] </tw-passagedata><tw-passagedata pid="23" name="Butcher Dog Interlude" tags="" position="1823.3333333333333,1977.3333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="24" name="Statues at Forum of Augustus" tags="map" position="2218.6666666666665,1094.3333333333335" size="100,100">Life of Rome depended on them. Their actions changed the course of history and brought your country to the glory. Now, the fate of Rome lies on your shoulders. Who knows, but maybe someday you will stand among them?
+
+[[Go back to the Forum of Augustus-&gt;The Forum of Augustus]] </tw-passagedata><tw-passagedata pid="25" name="Forum Romanum" tags="map" position="2940,1416" size="100,100">[[Enter the Forum of Augusts-&gt;The Forum of Augustus]] 
+[[Head out into the Forum Boarium-&gt;Forum Boarium]]
+[[Wine Cart]] 
+[[Public Orator]] </tw-passagedata><tw-passagedata pid="26" name="Public Orator" tags="" position="3162,1644" size="100,100">[[Forum Romanum]] </tw-passagedata><tw-passagedata pid="27" name="Untitled Passage 3" tags="" position="150,300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="Untitled Passage 4" tags="" position="577,383" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="Untitled Passage 5" tags="" position="272,162" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Untitled Passage 6" tags="" position="246,473" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Untitled Passage 7" tags="" position="18,1115" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Untitled Passage 8" tags="" position="26,578" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Untitled Passage 9" tags="" position="130,445" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Untitled Passage 10" tags="" position="677,191" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Untitled Passage 11" tags="" position="863,49" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="Untitled Passage 12" tags="" position="746,35" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Untitled Passage 13" tags="" position="619,61" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="Untitled Passage 14" tags="" position="476,48" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Untitled Passage 15" tags="" position="327,28" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Untitled Passage 16" tags="" position="177,13" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Untitled Passage 17" tags="" position="48,15" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Untitled Passage 18" tags="" position="25,1243" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Untitled Passage 19" tags="" position="10,983" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Untitled Passage 20" tags="" position="245,728" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Untitled Passage 21" tags="" position="16,843" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage 22" tags="" position="138,722" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Untitled Passage 23" tags="" position="19,726" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="Untitled Passage 24" tags="" position="424,183" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="49" name="Untitled Passage 25" tags="" position="394,478" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Untitled Passage 26" tags="" position="419,316" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 27" tags="" position="15,445" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Untitled Passage 28" tags="" position="288,587" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 29" tags="" position="158,574" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 30" tags="" position="288,300" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="55" name="Suburba" tags="" position="2029.3333333333333,1388.3333333333333" size="100,100">[[Butcher]]
 
 [[Dip into a back alley |Back Alley]]
 
