@@ -10,14 +10,12 @@ Classics 20 Project
 <body>
 <div id="passage"></div>
 
-<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="0.6" format="Snowman" format-version="1.3.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* #passage {
-  color: white;
-  background-color: #1d1d1d;
-  
-  border: 10px solid transparent;
-  
-  border-image: url('images/romeBorder.png') 64 repeat;
-} */
+<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="0.6" format="Snowman" format-version="1.3.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#passage {
+  border: solid transparent;
+  padding: 15px;
+  border-width: 0px 64px 0px 64px;
+  border-image: url('images/romeBorder.png') 0 0 0 64 repeat;
+}
 
 p {
   font-family: Cinzel;
@@ -97,25 +95,23 @@ window.wine_attempt = 0;
 
 
 
-</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2480.3333333333335,728.3333333333334" size="100,100">&lt;h2&gt;Welcome page/Index&lt;h2&gt;
+</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2485.3333333333335,695" size="100,100">&lt;h2&gt;Welcome page/Index&lt;h2&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Start Game|Introduction]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2489,881.6666666666666" size="100,100">Exposition - Your name is ...
 
 You&#39;re about to have a very &lt;span class=&quot;passage_link&quot;&gt;[[busy day|Temple of Mars Ultor]]&lt;/span&gt;</tw-passagedata><tw-passagedata pid="3" name="Temple of Mars Ultor" tags="map" position="2483.3333333333335,1045.3333333333333" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
 
 &lt;p&gt;
-Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. Statues of great Roman Gods — Mars Ultor and Venus Gentrix — glare at you.
+Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. In the dim light coming from small windows and scarce candles statues of great Roman Gods — Mars Ultor and Venus Gentrix — glare at you.
 &lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;
 [[Take a closer look at the statues-&gt;Statues in the Temple of Mars Ultor]]
 &lt;/p&gt;
 
-&lt;p&gt;
-Bright light and loud voices are coming from the main entrance. It looks like The Forum of Augustus is already full of people.
-&lt;/p&gt;
-
 &lt;p id=&quot;morning_time&quot;&gt;
+Bright light and loud voices are coming from the main entrance. It looks like The Forum of Augustus is already full of people.
+&lt;br/&gt;
 Rome has awaken.
 &lt;/p&gt;
 
@@ -129,7 +125,8 @@ $(document).ready(function() {
 	window.previous_location = &quot;Temple of Mars Ultor&quot;;
 });
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="4" name="The Forum of Augustus" tags="map" position="2483,1236" size="100,100">&lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
+</tw-passagedata><tw-passagedata pid="4" name="The Forum of Augustus" tags="map" position="2483,1236" size="100,100">&lt;h2&gt;The Forum of Augustus&lt;/h2&gt;
+&lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
 &lt;p id=&quot;time&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;
@@ -146,7 +143,7 @@ You look around. Under everwatchful gaze of Augustus, standing in the center of 
 You can endlessly watch gears of Roman politics grind, powering greatest empire on Earth, but you soon remeber about your task and reality brings you back from the dreams - you need to get all things for Robigalia, probably you can find them in the shops of Rome.
 &lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Head out into the Forum Romanum-&gt;Forum Romanum]]&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Head out into the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[Take a walk out to the Subura via Viscus Sandaliarus|Subura]]&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[Return to the Temple-&gt;Temple of Mars Ultor]]&lt;/p&gt;
 
@@ -160,7 +157,7 @@ $(document).ready(function() {
 
 	if (window.previous_location === &quot;Temple of Mars Ultor&quot;) {
 		$(&quot;#from&quot;).text (&quot;You exit the Temple of Mars Ultor and come down the steps to the center of the Forum of Augustus.&quot;);
-	} else if (window.previous_location === &quot;Forum Romanum&quot;) {
+	} else if (window.previous_location === &quot;The Forum Romanum&quot;) {
 		$(&quot;#from&quot;).text(&quot;You pass throught the Forum Julium and the Temple of Venus Gentrix and enter the Forum of Augustus.&quot;);
 	} else {
 	    $(&quot;#from&quot;).hide();
@@ -169,10 +166,12 @@ $(document).ready(function() {
 	window.previous_location=&quot;The Forum of Augustus&quot;;
 });
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="3179,1273" size="100,100">&lt;div id=&quot;no_wine&quot;&gt;
+</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="3179,1273" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+
+&lt;div id=&quot;no_wine&quot;&gt;
 &lt;p&gt;
 As you come closer, Cassius notices you and shouts:&lt;br/&gt;
-&quot;Salve, my dear friend, what brings you here? A jug as usual?&quot;
+&quot;&lt;em&gt;Salve&lt;/em&gt;, my dear friend, what brings you here? An empy jug to fill as usual?&quot;
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -182,9 +181,8 @@ As you recall, Cassius&#39; wine is certainly not bad and will certainly please 
 &lt;p class=&quot;passage_link&quot;&gt;[[Tell Cassius your story-&gt;Wine Cart Dialogue]]&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Return to Forum-&gt;Forum Romanum]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="6" name="Tailor" tags="" position="2845,1717" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="7" name="Incense Store" tags="" position="2728,1581.6666666666667" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="8" name="Slave Shop" tags="" position="3143,1710" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="9" name="Forum Boarium" tags="" position="2903,1549" size="100,100">
-
-[[Villa| Patrician Villa]]
+&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="6" name="Tailor" tags="" position="2845,1717" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="7" name="Incense Store" tags="" position="2728,1581.6666666666667" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="8" name="Slave Shop" tags="" position="3143,1710" size="100,100">[[Forum Boarium]] </tw-passagedata><tw-passagedata pid="9" name="Forum Boarium" tags="" position="2901.3333333333335,1550.6666666666667" size="100,100">
+[[Villa|Patrician Villa]]
 
 [[Tailor]]
 
@@ -192,7 +190,7 @@ As you recall, Cassius&#39; wine is certainly not bad and will certainly please 
 
 [[Look over at the hawker|Slave Shop]]
 
-[[Head back into the forum |Forum Romanum]] </tw-passagedata><tw-passagedata pid="10" name="Butcher" tags="map" position="1825,1414" size="100,100">The meat market assaults you with a glut of sensations. The smell of raw meat wafts over to you. The steady &quot;thwock&quot; of a butcher&#39;s knife drifts through the stalls. From their tops, you can spot carcasses hanging down, neatly packaged.
+[[Head back into the forum |The Forum Romanum]] </tw-passagedata><tw-passagedata pid="10" name="Butcher" tags="map" position="1825,1414" size="100,100">The meat market assaults you with a glut of sensations. The smell of raw meat wafts over to you. The steady &quot;thwock&quot; of a butcher&#39;s knife drifts through the stalls. From their tops, you can spot carcasses hanging down, neatly packaged.
 
 You spot some refuse bins alongside the stalls. You&#39;re not sure about this, but you could probably take a peek inside. Who knows, you might find something you can use?
 
@@ -227,7 +225,7 @@ You can hear something scuffling around towards the end of the alley.
 
 [[Edge closer towards the noise.|Dog Encounter 1]]
 
-[[Head back to the city|Subura]]</tw-passagedata><tw-passagedata pid="12" name="Ager Romanus" tags="map" position="1663,1026" size="100,100">[[Subura]] </tw-passagedata><tw-passagedata pid="13" name="Brothel" tags="" position="1665,1202" size="100,100">[[Subura]] </tw-passagedata><tw-passagedata pid="14" name=" Patrician Villa" tags="map" position="2976,1718" size="100,100">The patrician villa stands apart from the other buildings. Though close enough to the city to enjoy its benefits, the builder clearly tried their best to shut out the problems. Its broad walls face south and away, towards the prevailing wind. As a result, the air around the place seems fresher than the murky air of the deeper city. 
+[[Head back to the city|Subura]]</tw-passagedata><tw-passagedata pid="12" name="Ager Romanus" tags="map" position="1663,1026" size="100,100">[[Subura]] </tw-passagedata><tw-passagedata pid="13" name="Brothel" tags="" position="1665,1202" size="100,100">[[Subura]] </tw-passagedata><tw-passagedata pid="14" name="Patrician Villa" tags="map" position="2976,1716.3333333333333" size="100,100">The patrician villa stands apart from the other buildings. Though close enough to the city to enjoy its benefits, the builder clearly tried their best to shut out the problems. Its broad walls face south and away, towards the prevailing wind. As a result, the air around the place seems fresher than the murky air of the deeper city. 
 
 In fact, you suppose that if only the building weren&#39;t here, the wind would reach more of the city. But who are you to question things? The people are clearly a cut above a slave.
 
@@ -300,13 +298,15 @@ The dog has joined you!
 window.dog_entrails=&quot;lured&quot;;
 meat=&quot;none&quot;;
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="20" name="Bag of Old Incense" tags="map" position="2988.6666666666665,933" size="100,100">&lt;p&gt;
+</tw-passagedata><tw-passagedata pid="20" name="Bag of Old Incense" tags="map" position="2982,961.3333333333334" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
+&lt;p&gt;
 Inside you find old incense! Probably someone has forgotten it during the last ritual. Certainly they it not as good as the ones you can purchase in the city, but something is better than nothing.
 &lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Collect old incense-&gt;Old Incense]]&lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Temple-&gt;Temple of Mars Ultor]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="21" name="Statues in the Temple of Mars Ultor" tags="map" position="2801,811.3333333333334" size="100,100">&lt;p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Go Back-&gt;Temple of Mars Ultor]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="21" name="Statues in the Temple of Mars Ultor" tags="map" position="2791,826.3333333333334" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
+&lt;p&gt;
 You walk closer to the deities, powerful and magnificent protectors of Rome: Mars, fierce and mighty in his armor, dreaming of further victories Rome will bring him; Venus, gentle and beautiful, caring for people of the city, and Divus Julius, knowledgeable and wise, guiding Romans to towards glory.
 &lt;/p&gt;
 
@@ -318,7 +318,7 @@ You walk closer to the deities, powerful and magnificent protectors of Rome: Mar
 &lt;p class=&quot;passage_link&quot;&gt;[[Look into the bag-&gt;Bag of Old Incense]]&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Temple-&gt;Temple of Mars Ultor]]&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Go Back-&gt;Temple of Mars Ultor]]&lt;/p&gt;
 
 &lt;script&gt;
 $(document).ready(function() {
@@ -327,24 +327,28 @@ $(document).ready(function() {
 	}
 });
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="22" name="Old Incense" tags="map" position="2796,1043" size="100,100">&lt;p&gt;
+</tw-passagedata><tw-passagedata pid="22" name="Old Incense" tags="map" position="2797.6666666666665,1099.6666666666667" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
+&lt;p&gt;
 You have received old incense. It will do the job for now, but you should find something better if you can.
 &lt;/p&gt;
 
 &lt;% window.incense=&quot;old&quot; %&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Return back-&gt;Temple of Mars Ultor]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Butcher Dog Interlude" tags="map" position="1826,1804" size="100,100">You and the dog make your way through the crowded city streets, towards the butcher. It keeps pace with you, dodging and weaving between a merchant&#39;s cart anfd a stern-looking washerwoman. You glance down at it, and it glances up at you. The little red dog gives you a happy bark and wag of its tail.
+&lt;p class=&quot;passage_link&quot;&gt;[[Go Back-&gt;Temple of Mars Ultor]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="23" name="Butcher Dog Interlude" tags="map" position="1826,1804" size="100,100">You and the dog make your way through the crowded city streets, towards the butcher. It keeps pace with you, dodging and weaving between a merchant&#39;s cart anfd a stern-looking washerwoman. You glance down at it, and it glances up at you. The little red dog gives you a happy bark and wag of its tail.
 
 Are you sure you still want to take it to be butchered?
 
 [[...yes.|Butcher Dog Interlude Y]] 
 
 [[Actually...|Butcher Dog Interlude N]] 
-</tw-passagedata><tw-passagedata pid="24" name="Statues at Forum of Augustus" tags="map" position="2485,1427" size="100,100">&lt;p&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Statues at Forum of Augustus" tags="map" position="2485,1427" size="100,100">&lt;h2&gt;The Forum of Augustus&lt;/h2&gt;
+
+&lt;p&gt;
 You walk past the statues and read inscriptions below them. Aeneas and Numitor, Romulus and Remus, Scipio and Fabius. Life of Rome depended on them. Their actions changed the course of history and brought your country to the glory. Now, the fate of Rome lies on your shoulders. Who knows, but maybe someday you will stand among them?
 &lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Go back to the Forum of Augustus-&gt;The Forum of Augustus]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="25" name="Forum Romanum" tags="map" position="2884,1284" size="100,100">&lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Go back to the center of Forum of Augustus-&gt;The Forum of Augustus]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="25" name="The Forum Romanum" tags="map" position="2884,1284" size="100,100">&lt;h2&gt;The Forum Romanum&lt;/h2&gt;
+&lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;
 If the Forum of Augusts is the brain of Rome, Forum Romanum is its heart. The oldest square in the city is filled with people, like industrious ants, moving in a complex choreographed dance.
@@ -360,7 +364,7 @@ As you move towards center of the Forum you see a group of people gather around 
 You look around and see your friend Cassius behind his cart, selling wine to thursty people on the side of the Forum. What a coincedence!
 &lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Talk to Casius-&gt;Wine Cart]]&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Talk to Cassius-&gt;Wine Cart]]&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Head out into the Forum Boarium towards the river banks-&gt;Forum Boarium]]&lt;/p&gt;
 
@@ -374,15 +378,19 @@ $(document).ready(function () {
 		$(&quot;#from&quot;).hide();
 	}
 
-	window.previous_location=&quot;Forum Romanum&quot;;
+	window.previous_location=&quot;The Forum Romanum&quot;;
 });
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="26" name="Obtain wine" tags="" position="3184,1089" size="100,100">You have obtain two jags of the finest wine you can find in Rome!
+</tw-passagedata><tw-passagedata pid="26" name="Obtain wine" tags="" position="3184,1087.3333333333333" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+
+&lt;p&gt;You have obtain two jags of the finest wine you can find in Rome!&lt;/p&gt;
 
 &lt;% window.gold = window.gold - window.wine_price %&gt;
 &lt;% window.wine = &quot;good&quot; %&gt;
 
-[[Return to Forum Romanum-&gt;Forum Romanum]] </tw-passagedata><tw-passagedata pid="27" name="Subura" tags="" position="2153,1182" size="100,100">&lt;p class=&quot;passage_link&quot;&gt;[[Butcher]]&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="27" name="Subura" tags="" position="2183,1252" size="100,100">&lt;h2&gt;Subura&lt;/h2&gt;
+
+&lt;p class=&quot;passage_link&quot;&gt;[[Butcher]]&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[Dip into a back alley|Back Alley]]&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[The Hills|Ager Romanus]]&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[Brothel]]&lt;/p&gt;
@@ -390,7 +398,9 @@ $(document).ready(function () {
 
 &lt;%window.previous_location=&quot;Subura&quot;%&gt;
 </tw-passagedata><tw-passagedata pid="28" name="Public Orator" tags="" position="3184,1538" size="100,100">[[Ovid]]
-[[Forum Romanum]] </tw-passagedata><tw-passagedata pid="29" name="Wine Cart Dialogue" tags="" position="3338,1170" size="100,100">&lt;div id=&quot;attempt_0&quot;&gt;
+[[The Forum Romanum]] </tw-passagedata><tw-passagedata pid="29" name="Wine Cart Dialogue" tags="" position="3338,1170" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+
+&lt;div id=&quot;attempt_0&quot;&gt;
 &lt;p&gt;
 Cassius carefully listens to your story and smile appears on his face:&lt;br/&gt;
 &quot;I can certainly help you, Pompey, in your noble enterprise!&quot; says Cassius. &lt;br/&gt;
@@ -401,7 +411,7 @@ Cassius carefully listens to your story and smile appears on his face:&lt;br/&gt
 
 &lt;div id=&quot;attempt_1&quot;&gt;
 &lt;p&gt;&quot;Dear Gods!&quot; you exclaim.&lt;br/&gt;
-&quot;Cassius, my friend, that is a bit to much! You&#39;ve heard my story, how can I buy incenses, if wine will cost me so much?
+&quot;Cassius, my friend, that is a bit too much! You&#39;ve heard my story, how can I buy incenses, if wine will cost me so much?
 I am your loyal customer - no celebrations happens in my home with out a glass of your wine on the table, and you bring up the price so high in the moment of need! After all, after Robigalia passes and your wine is accepted by Robigus, all Rome will know of high quality of your wine!&quot;
 &lt;/p&gt;
 
@@ -413,7 +423,7 @@ I am your loyal customer - no celebrations happens in my home with out a glass o
 &lt;p id=&quot;enough_money&quot; class=&quot;passage_link&quot;&gt;[[Accept the price-&gt;Obtain wine]]&lt;/p&gt;
 &lt;p id=&quot;not_enough_money&quot; class=&quot;passage_link&quot;&gt;[[Accept the price-&gt;No Money]]&lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Romanum-&gt;Forum Romanum]]&lt;/p&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;
 
 &lt;script&gt;
 $(document).ready(function() {
