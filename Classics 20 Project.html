@@ -77,11 +77,11 @@ window.wine_bought_once = false;
 window.wine_declined = false;
 </script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2482,695" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
 
-&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for Classics 20, Winter, 2018 with Professor Gurval. &lt;/p&gt;
+&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Gurval&lt;/a&gt;. &lt;/p&gt;
 
-&lt;p&gt;Written in Twine, with graphics made in Aseprite&lt;/p&gt;
+&lt;p&gt;Written in Twine 2, with graphics made in Aseprite. Check out our crazy development history at &lt;a href=&quot;https://github.com/pravinvisakan/Classics20CreativeProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;p&gt;Enjoy the game!&lt;/p&gt;
 
 [[Start Game |Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2487,881" size="100,100">Your name is Gaius Pompeius. Due to your unfortunate last name, and an even more unfortunate civil war, you&#39;ve ended up in the clutches of slavery. Things could be worse. Your master is the renowned Flamen Quirenalis, master of many religious ceremonies and rites in Rome.
 
@@ -239,6 +239,11 @@ if(window.meat!=&quot;none&quot;)
 {
 	$(&quot;#meat&quot;).hide();
 	$(&quot;#butcher&quot;).text(&quot;You&#39;ve already bought meat from the butcher. He seems satisfied.&quot;);
+}
+
+if(window.gold&lt;100)
+{
+	$(&quot;#meat&quot;).hide();
 }
 
 if(window.entrails==&quot;found&quot;) {
@@ -477,7 +482,10 @@ $(document).ready(function () {
 &lt;p class=&quot;passage_link&quot;&gt;[[The Forum of Augustus]]&lt;/p&gt;
 
 &lt;% window.previous_location=&quot;Subura&quot; %&gt;
-</tw-passagedata><tw-passagedata pid="27" name="Public Orator" tags="" position="3200,1698" size="100,100">[[Ovid]]
+</tw-passagedata><tw-passagedata pid="27" name="Public Orator" tags="" position="3200,1698" size="100,100">
+
+[[Ovid]]
+
 [[The Forum Romanum]] </tw-passagedata><tw-passagedata pid="28" name="Wine Cart Dialogue" tags="" position="3327,1398" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;div id=&quot;attempt_1&quot; style=&quot;display: none;&quot;&gt;
