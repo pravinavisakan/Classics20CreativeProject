@@ -73,7 +73,7 @@ h2 {
   font-weight: bold;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
 window.day = "morning"; //morning, day, night
-window.gold = 15;
+window.gold = 500;
 window.previous_location = "Temple of Mars Ultor" 
 
 window.met_ovid = "false" //true, false
@@ -100,15 +100,15 @@ window.wine_declined = false;
 
 
 
-</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2465,574" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
+</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2476.666666666667,549" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
 
-&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Gurval&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Robert Gurval&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Written in Twine 2, with graphics made in Aseprite. Check out our crazy commit history at &lt;a href=&quot;https://github.com/pravinvisakan/Classics20CreativeProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Enjoy the game!&lt;/p&gt;
 
-[[Start Game |Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2475,744" size="100,100">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Start Game |Introduction]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2475,744" size="100,100">&lt;h2&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;Your name is &lt;strong&gt;Gaius Pompeius&lt;/strong&gt;. Before your life in Rome, you were considered a renowned philosopher in your home of Athens. At least dozens of people had read your works! Convinced of your wisdom, you set out into the world to spread your word. After an unfortunate run-in with some coastal pirates, you&#39;ve ended up in the clutches of slavery. &lt;/p&gt;
 
@@ -221,7 +221,7 @@ As you recall, Cassius&#39; wine is certainly not bad and will certainly please 
 
 &lt;p&gt;In the furthest corner of the market you find an old man, behind a tiny kiosk. You come closer to the kiosk and rejoice: you have found, frankincense, the best incense you can ever offer to a god! Robigus will be delighted!&lt;/p&gt;
 
-&lt;p&gt;You approach the old trader, and ask for price for a small bag of frankincense. However, he doesn&#39;t seem to understand you! You try Greek, but it does not help either, but only make the old man smile. Eventually, the old man reaches for a small piece of coal and scribbles the price on a piece of wood. 15 asarii! That&#39;s a lot! You try to explain that you need a lower price, but the old man has no clue about what are you talking about... &lt;/p&gt;
+&lt;p&gt;You approach the old trader, and ask for price for a small bag of frankincense. However, he doesn&#39;t seem to understand you! You try Greek, but it does not help either, but only make the old man smile. Eventually, the old man reaches for a small piece of coal and scribbles the price on a piece of wood. 250 golds! That&#39;s a lot! You try to explain that you need a lower price, but the old man has no clue about what are you talking about... &lt;/p&gt;
 
 &lt;p&gt;It looks like you have no other choice but to purchase the bag.&lt;/p&gt;
 
@@ -234,7 +234,7 @@ As you recall, Cassius&#39; wine is certainly not bad and will certainly please 
 &lt;script&gt;
 $(document).ready(function() {
 	$(&quot;#not_enough_money&quot;).hide();
-	if (window.gold &lt; 15) {
+	if (window.gold &lt; 250) {
 		$(&quot;#enough_money&quot;).hide();
 		$(&quot;#not_enough_money&quot;).show();
 	}
@@ -292,7 +292,7 @@ $(document).ready(function() {
 
 &lt;p id=&quot;entrails&quot; class=&quot;passage_link&quot;&gt;[[Check a refuse bin|Entrails]]&lt;/p&gt;
 
-&lt;p id=&quot;meat&quot; class=&quot;passage_link&quot;&gt;[[Buy meat from the butcher for 15 gold|Meat]]&lt;/p&gt;
+&lt;p id=&quot;meat&quot; class=&quot;passage_link&quot;&gt;[[Buy meat from the butcher for 100 gold|Meat]]&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Head back into the city|Subura]]&lt;/p&gt;
 
@@ -434,7 +434,7 @@ $(document).ready(function() {
 &lt;/div&gt;
 
 &lt;%
-window.gold -= 5;
+window.gold -= 100;
 meat = (dog_entrails==&quot;none&quot;?&quot;bait&quot;:&quot;sentimental&quot;);
 %&gt;</tw-passagedata><tw-passagedata pid="17" name="Entrails" tags="item" position="1716,1248" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
 &lt;div class=&quot;passage_with_image&quot;&gt;
@@ -630,7 +630,7 @@ $(document).ready(function() {
 &lt;div id=&quot;attempt_1&quot; style=&quot;display: none;&quot;&gt;
 &lt;p&gt;
 Cassius carefully listens to your story and smile appears on his face:&lt;br/&gt;
-&quot;I can certainly help you, Pompey, in your noble enterprise!&quot; says Cassius. &quot;I can give you a jug of my finest wine for only 15 asarii! I have no doubt that Robigus will be more than satisfied with it!&quot;
+&quot;I can certainly help you, Pompey, in your noble enterprise!&quot; says Cassius. &quot;I can give you a jug of my finest wine for only 200 golds! I have no doubt that Robigus will be more than satisfied with it!&quot;
 &lt;/p&gt;
 
 &lt;p&gt;That is definitely too much, may be you can bargain or find a bottle of good wine somewhere else?
@@ -643,7 +643,7 @@ Cassius carefully listens to your story and smile appears on his face:&lt;br/&gt
 &lt;/p&gt;
 
 &lt;p&gt;
-&quot;Well, let me think...&quot; Cassisus replies. &quot;I think I can cut down the price for you at 12 asarii, but only for you, and only because of your misfortune.&quot;
+&quot;Well, let me think...&quot; Cassisus replies. &quot;I think I can cut down the price for you at 175 golds, but only for you, and only because of your misfortune.&quot;
 &lt;/p&gt;
 &lt;p&gt;Maybe you can try something else, nevertheless, action speaks louder than words.&lt;/&gt;
 &lt;/div&gt;
@@ -657,7 +657,7 @@ However, it looks like he became deaf to your pleas: none of your words can chan
 
 &lt;div id=&quot;bought_once&quot; style=&quot;display: none;&quot;&gt;
 &lt;p&gt;
-&quot;Ha! You have returned!&quot; laughs Cassius &quot;I don&#39;t have much of wine left and all of it is the most expensive: 15 golds per jug.&quot;&lt;br/&gt;
+&quot;Ha! You have returned!&quot; laughs Cassius &quot;I don&#39;t have much of wine left and all of it is the most expensive: 200 golds per jug.&quot;&lt;br/&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 
@@ -690,18 +690,18 @@ $(document).ready(function() {
 		case 1:
 			break;
 		case 2:
-			window.wine_price = 12;
+			window.wine_price = 175;
 			break;
 		case 3:
 			$(&quot;#bargain&quot;).hide();
 			$(&quot;#normal_return&quot;).hide();
 			$(&quot;#final_return&quot;).show();
-			window.wine_price = 10;
+			window.wine_price = 150;
 			break;
 		default:
 			$(&quot;#bargain&quot;).hide();
 			attempt_id = &quot;#bought_once&quot;;
-			window.wine_price = 15;
+			window.wine_price = 200;
 			break;
 	}
 	
@@ -813,7 +813,7 @@ $(document).ready(function () {
 &lt;script&gt;
 $(document).ready(function() {
 	window.incense = &quot;new&quot;;
-	window.gold -= 15;
+	window.gold -= 250;
 });
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="37" name="No Money (Insence Store)" tags="" position="2569,1639" size="100,100">&lt;p&gt;
 Oops! It looks like you are out of money! You have only &lt;%= window.gold %&gt; of gold. That&#39;s not enough to buy incense for 250 gold.
@@ -821,7 +821,7 @@ Oops! It looks like you are out of money! You have only &lt;%= window.gold %&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Go Back-&gt;Incense Store]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="38" name="Dropped Bag" tags="" position="3129,1764" size="100,100">&lt;h2&gt;The Cave&lt;h2&gt;
 
-&lt;p&gt;Wow! Thank Gods! They are definitely on your side today! It looks like someone has dropped their bag of coins on the way to Rome! You count the coins. Exactly 15 asarii! You will certainly find a use for these coins!&lt;/p&gt;
+&lt;p&gt;Wow! Thank Gods! They are definitely on your side today! It looks like someone has dropped their bag of coins on the way to Rome! You count the coins. Exactly 200 gold. You will certainly find a use for these coins!&lt;/p&gt;
 
 &lt;% window.gold += 200 %&gt;
 
@@ -1005,7 +1005,7 @@ window.wine=&quot;good&quot;;
 
 &lt;p&gt;You and the flamen quickly hatch a plan. At least, you manage to saddle him with the difficult job of tracking down your errant master. The panicked priest looks at you fretfully, but then grits his teeth.&lt;/p&gt;
 
-&lt;p&gt;&quot;Fine. But then, in my stead, you must gather the materials for the ritual. Bring me &lt;strong&gt;wine&lt;/strong&gt;, &lt;strong&gt;incense&lt;/strong&gt;, and the &lt;strong&gt;entrails&lt;/strong&gt; of a red dog by tonight, or Rome is done for.&quot; He gives you 15 asarii from the temple coffers, and pushes you out the door.&lt;/p&gt;
+&lt;p&gt;&quot;Fine. But then, in my stead, you must gather the materials for the ritual. Bring me &lt;strong&gt;wine&lt;/strong&gt;, &lt;strong&gt;incense&lt;/strong&gt;, and the &lt;strong&gt;entrails&lt;/strong&gt; of a red dog by tonight, or Rome is done for.&quot;&lt;/p&gt;
 
 &lt;p&gt;It seems you&#39;re about to have a pretty &lt;span class=&quot;passage_link&quot;&gt;[[busy day|The Temple of Mars Ultor]]&lt;/span&gt; ahead of you.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="63" name="Robigus G" tags="" position="1802,565" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
