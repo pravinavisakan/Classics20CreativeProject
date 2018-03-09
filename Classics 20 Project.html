@@ -17,7 +17,7 @@ Classics 20 Project
   padding: 15px;
   border: solid transparent;
   border-width: 0px 0px 0px 64px;
-  border-image: url('images/romeBorder.png') 0 0 0 64 repeat;
+  border-image: url('images/oliveBorder.png') 0 0 0 64 repeat;
 }
 
 p {
@@ -71,10 +71,7 @@ h2 {
   font-family: "Roman Bold";
   src: url('fonts/Cinzel-Bold.ttf');
   font-weight: bold;
-}
-
-
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
 window.day = "morning"; //morning, day, night
 window.gold = 15;
 window.previous_location = "Temple of Mars Ultor" 
@@ -100,6 +97,7 @@ window.wine_price = 200;
 window.wine_attempt = 0;
 window.wine_bought_once = false;
 window.wine_declined = false;
+
 
 
 </script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2465,574" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
@@ -878,30 +876,28 @@ window.juice=&quot;received&quot;;
 
 &lt;script&gt;
 window.wine=&quot;good&quot;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="60" name="Flamen (Check)" tags="" position="2254,988" size="100,100">&lt;h2&gt;Your Fellow Slave&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="60" name="Flamen (Check)" tags="" position="2207.3333333333335,1004.6666666666666" size="100,100">&lt;h2&gt;Your Fellow Slave&lt;/h2&gt;
 
 &lt;p&gt;You find your fellow slave in a back room in the temple. It seems like the search for your master has been getting him down.&lt;/p&gt;
 
-&lt;p&gt; He looks up as you walk in. 
+&lt;p&gt;He looks up as you walk in. 
 &quot;Let&#39;s see what you&#39;ve managed to get, then.&quot; &lt;/p&gt;
 
-&lt;p&gt;
-&lt;div id=&quot;juice&quot;&gt;&quot;...grape juice? I know you understand what alcohol is. You do, right?&lt;/div&gt;
+&lt;p id=&quot;juice&quot;&gt;&quot;...grape juice? I know you understand what alcohol is. You do, right?&lt;/p&gt;
 
-&lt;div id=&quot;wine&quot;&gt;&quot;Oh, you&#39;ve gotten some wine! This&#39;ll be perfect for te ritual.&quot;&lt;/div&gt;
+&lt;p id=&quot;wine&quot;&gt;&quot;Oh, you&#39;ve gotten some wine! This&#39;ll be perfect for te ritual.&quot;&lt;/p&gt;
 
-&lt;div id=&quot;entrails&quot;&gt;&quot;Where did you get those entrails, out of a bin? They have to be fresh for the ritual. I suppose if we have nothing else...&quot;&lt;/div&gt;
+&lt;p id=&quot;entrails&quot;&gt;&quot;Where did you get those entrails, out of a bin? They have to be fresh for the ritual. I suppose if we have nothing else...&quot;&lt;/p&gt;
 
-&lt;div id=&quot;dog&quot;&gt;&quot;Oh, what a cute dog! His entrails will do nicely.&quot;&lt;/div&gt;
+&lt;p id=&quot;dog&quot;&gt;&quot;Oh, what a cute dog! His entrails will do nicely.&quot;&lt;/p&gt;
 
-&lt;div id=&quot;old&quot;&gt;&quot;That&#39;s some old incense. Are you sure it still lights up?&quot;&lt;/div&gt;
+&lt;p id=&quot;old&quot;&gt;&quot;That&#39;s some old incense. Are you sure it still lights up?&quot;&lt;/p&gt;
 
-&lt;div id=&quot;incense&quot;&gt;&quot;Oh, that&#39;s some lovely smelling incense you got there! It&#39;ll add a nice atmosphere tomorrow, I&#39;m sure.&quot;&lt;/div&gt;
-&lt;/p&gt;
+&lt;p id=&quot;incense&quot;&gt;&quot;Oh, that&#39;s some lovely smelling incense you got there! It&#39;ll add a nice atmosphere tomorrow, I&#39;m sure.&quot;&lt;/p&gt;
 
-&lt;div id=&quot;complete&quot;&gt; Looks like you have everything! [[Get ready for tomorrow|Robigus 1]] &lt;/div&gt;
+&lt;p id=&quot;complete&quot;&gt;Looks like you have everything!&lt;span class=&quot;passage_link&quot;&gt;[[Get ready for tomorrow|Robigus 1]]&lt;/span&gt;&lt;/p&gt;
 
-[[Go back |The Temple of Mars Ultor]] 
+&lt;p class=&quot;passage_link&quot;&gt;[[Go back |The Temple of Mars Ultor]]&lt;/p&gt;
 
 &lt;script&gt;
   
@@ -964,25 +960,21 @@ window.wine=&quot;good&quot;;
   }
   
   
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="61" name="Robigus 1" tags="" position="2120,822" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="61" name="Robigus 1" tags="" position="2096.6666666666665,825.3333333333334" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
-&lt;p&gt;The morning of April 25th is bright and clear. This contrasts heavily with the ragged procession that makes it&#39;s way through the city towards the Ager Romanus. &lt;/p&gt;
+&lt;p&gt;The morning of April 25th is bright and clear. This contrasts heavily with the ragged procession that makes it&#39;s way through the city towards the Ager Romanus.&lt;/p&gt;
 
 &lt;p&gt;Leading the charge is the Flamen Quirenlais himself. You&#39;re not sure where your fellow slave ended up finding him, but the strongg smell of wine drifting off of him gives you an idea. He mutters and shakes his head occasionally. You, the dog, and the other slave follow up behind him, hauling the materials you gathered.&lt;/p&gt;
 
-&lt;p&gt; Bringing up the rear is a small group of patricians, each in a similar state to the Flamen. Amongst them is a man you remember seeing at the forum occasionally - Ovid, the poet. You remember him having an appetite for the lecherous. As of now, the only thing he seems to be feeding on is a large bowl of porridge&lt;/p&gt;
+&lt;p&gt;Bringing up the rear is a small group of patricians, each in a similar state to the Flamen. Amongst them is a man you remember seeing at the forum occasionally - Ovid, the poet. You remember him having an appetite for the lecherous. As of now, the only thing he seems to be feeding on is a large bowl of porridge&lt;/p&gt;
 
 &lt;p&gt;Eventually, your party reaches the cave.&lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;
+&lt;p id=&quot;good&quot; class=&quot;passage_link&quot;&gt;[[Continue|Robigus G]]&lt;/p&gt;
 
-&lt;div id=&quot;good&quot;&gt;[[Continue|Robigus G]]&lt;/div&gt;
+&lt;p id=&quot;meh&quot; class=&quot;passage_link&quot;&gt;[[Continue|Robigus M]]&lt;/p&gt;
 
-&lt;div id=&quot;meh&quot;&gt;[[Continue|Robigus M]]&lt;/div&gt;
-
-&lt;div id=&quot;bad&quot;&gt;[[Continue|Robigus B]]&lt;/div&gt;
-
-&lt;/p&gt;
+&lt;p id=&quot;bad&quot; class=&quot;passage_link&quot;&gt;[[Continue|Robigus B]]&lt;/p&gt;
 
 &lt;script&gt;
 	$(&quot;#good&quot;).hide();
@@ -1015,7 +1007,7 @@ window.wine=&quot;good&quot;;
 
 &lt;p&gt;&quot;Fine. But then, in my stead, you must gather the materials for the ritual. Bring me &lt;strong&gt;wine&lt;/strong&gt;, &lt;strong&gt;incense&lt;/strong&gt;, and the &lt;strong&gt;entrails&lt;/strong&gt; of a red dog by tonight, or Rome is done for.&quot; He gives you 15 asarii from the temple coffers, and pushes you out the door.&lt;/p&gt;
 
-&lt;p&gt;It seems you&#39;re about to have a pretty &lt;span class=&quot;passage_link&quot;&gt;[[busy day|The Temple of Mars Ultor]]&lt;/span&gt; ahead of you.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="63" name="Robigus G" tags="" position="1802,565.3333333333333" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
+&lt;p&gt;It seems you&#39;re about to have a pretty &lt;span class=&quot;passage_link&quot;&gt;[[busy day|The Temple of Mars Ultor]]&lt;/span&gt; ahead of you.&lt;/p&gt;</tw-passagedata><tw-passagedata pid="63" name="Robigus G" tags="" position="1802,565" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
 &lt;p&gt;Within the cave, you and your fellow quickly start preparations. The wine is poured from its jug, and the incense is lit. Your dog is caught, and the entrails prepared. You spare yourself the grisly sight. You focus on building the fire, tall and imposing. &lt;/p&gt;
 
@@ -1043,7 +1035,7 @@ Congratulations! You&#39;ve saved Rome&#39;s harvest from the ravages of wheat r
 
 &lt;h2&gt;The End&lt;/h2&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Start Page|Robigalia - Start]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="64" name="Robigus M" tags="" position="2053.333333333333,613.6666666666666" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Start Page|Robigalia - Start]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="64" name="Robigus M" tags="" position="2051.3333333333335,613" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
 &lt;p&gt;Within the cave, you and your fellow quickly start preparations. he drink is poured, the incense lit, and the entrails are prepared. You spare yourself the grisly sight. You focus on building the fire, tall and imposing. &lt;/p&gt;
 
@@ -1066,7 +1058,7 @@ Seeing your approach, the bird caws again, and flies off. It seems ambivalent, a
 &lt;p&gt;
 Congratulations! You&#39;ve completed Robigalia, and just barely saved Rome from death by harvest. Though the year won&#39;t exactly be fruitful, you managed to stav off total disaster. Maybe next time you can find some better ritual ingredients!
 &lt;/p&gt;
-&lt;p class=&quot;passage_link&quot;&gt;[[Start again|Robigalia - Start]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="65" name="Robigus B" tags="" position="2191.6666666666665,673" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Start again|Robigalia - Start]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="65" name="Robigus B" tags="" position="2191,673" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
 &lt;p&gt;Within the cave, you and your fellow quickly start preparations. The grape juice is poured, the incense lit, and the entrails are prepared. You spare yourself the grisly sight. You focus on building the fire, tall and imposing. &lt;/p&gt;
 
