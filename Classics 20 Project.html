@@ -71,7 +71,10 @@ h2 {
   font-family: "Roman Bold";
   src: url('fonts/Cinzel-Bold.ttf');
   font-weight: bold;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
+}
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
 window.day = "morning"; //morning, day, night
 window.gold = 500;
 window.previous_location = "Temple of Mars Ultor" 
@@ -96,15 +99,18 @@ window.meat = "none"; //none, bait, sentimental
 window.wine_price = 200;
 window.wine_attempt = 0;
 window.wine_bought_once = false;
-window.wine_declined = false;</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2465,574" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
+window.wine_declined = false;
 
-&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for Classics 20, Winter, 2018 with Professor Gurval. &lt;/p&gt;
 
-&lt;p&gt;Written in Twine, with graphics made in Aseprite&lt;/p&gt;
+</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2465,574" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
 
-&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Gurval&lt;/a&gt;. &lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Start Game |Introduction]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2475,744" size="100,100">&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Written in Twine 2, with graphics made in Aseprite. Check out our crazy commit history at &lt;a href=&quot;https://github.com/pravinvisakan/Classics20CreativeProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Enjoy the game!&lt;/p&gt;
+
+[[Start Game |Introduction]]</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2475,744" size="100,100">&lt;h2&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;Your name is &lt;strong&gt;Gaius Pompeius&lt;/strong&gt;. Before your life in Rome, you were considered a renowned philosopher in your home of Athens. At least dozens of people had read your works! Convinced of your wisdom, you set out into the world to spread your word. After an unfortunate run-in with some coastal pirates, you&#39;ve ended up in the clutches of slavery. &lt;/p&gt;
 
@@ -190,7 +196,7 @@ $(document).ready(function() {
 	}
 	window.previous_location=&quot;The Forum of Augustus&quot;;
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="3356.0000000000005,930.3333333333333" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="3356,930" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;div id=&quot;no_wine&quot;&gt;
 &lt;p&gt;
@@ -235,7 +241,7 @@ $(document).ready(function() {
 		$(&quot;#not_enough_money&quot;).show();
 	}
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="Slave Shop" tags="" position="3242.666666666667,1561" size="100,100">&lt;h2&gt;Forum Boarium&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="Slave Shop" tags="" position="3242,1561" size="100,100">&lt;h2&gt;Forum Boarium&lt;/h2&gt;
 &lt;p&gt;The image is painfully familiar to you. You remember a day when you were, too, like them, put on the platform in front of crowd of moneybags, stripped off clothes, and sold to your current master, Flamen Quirenalis, who is now lost somewhere...&lt;/p&gt;
 
 &lt;p&gt;I swore to myself, that I will become a freedman one day, and will return back to Athens. However, you have already spent 5 years as a slave. Only gods can help you out of your misery...&lt;/p&gt;
@@ -273,7 +279,7 @@ $(document).ready(function() {
 	window.previous_location = &quot;Forum Boarium&quot;;
 	window.seen_elephant = true;
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="Butcher" tags="map" position="1828.3333333333333,1426" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="9" name="Butcher" tags="map" position="1828,1426" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
 
 &lt;p&gt;The meat market assaults you with a glut of sensations. The smell of raw meat wafts over to you. The steady &quot;thwock&quot; of a butcher&#39;s knife drifts through the stalls. From their tops, you can spot carcasses hanging down, neatly packaged.&lt;/p&gt;
 
@@ -417,7 +423,7 @@ $(document).ready(function() {
 		$(&quot;#response&quot;).text(&quot;At least, that&#39;s how you remember it happening. Nobody greets you here now.&quot;);
 	}
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="Meat" tags="item" position="1658.3333333333333,1434" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="16" name="Meat" tags="item" position="1658,1434" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
 
 &lt;div class=&quot;passage_with_image&quot;&gt;
     &lt;div class=&quot;text&quot;&gt;
@@ -432,7 +438,7 @@ $(document).ready(function() {
 &lt;%
 window.gold -= 100;
 meat = (dog_entrails==&quot;none&quot;?&quot;bait&quot;:&quot;sentimental&quot;);
-%&gt;</tw-passagedata><tw-passagedata pid="17" name="Entrails" tags="item" position="1716.3333333333333,1248" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
+%&gt;</tw-passagedata><tw-passagedata pid="17" name="Entrails" tags="item" position="1716,1248" size="100,100">&lt;h2&gt;Meat Market&lt;/h2&gt;
 &lt;div class=&quot;passage_with_image&quot;&gt;
     &lt;div class=&quot;text&quot;&gt;
 		&lt;p&gt;You found some mysterious entrails! They aren&#39;t dog entrails, but how picky could Robigus could be, anyway?&lt;/p&gt;
@@ -494,7 +500,7 @@ $(document).ready(function() {
 	}
 });
 &lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="21" name="Old Incense" tags="map" position="2793.6666666666665,1059" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Old Incense" tags="map" position="2793,1059" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
 
 &lt;div class=&quot;passage_with_image&quot;&gt;
 	&lt;div class=&quot;text&quot;&gt;
@@ -505,11 +511,11 @@ $(document).ready(function() {
 		&lt;img src=&quot;images/old_incense_1.png&quot;/&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;% window.incense=&quot;old&quot; %&gt;</tw-passagedata><tw-passagedata pid="22" name="Butcher Dog Interlude" tags="map" position="1824.3333333333333,1804" size="100,100">&lt;h2&gt;Subura&lt;/h2&gt;
+&lt;% window.incense=&quot;old&quot; %&gt;</tw-passagedata><tw-passagedata pid="22" name="Butcher Dog Interlude" tags="map" position="1824,1804" size="100,100">&lt;h2&gt;Subura&lt;/h2&gt;
 
 &lt;p&gt;You and the dog make your way through the crowded city streets, towards the butcher. It keeps pace with you, dodging and weaving between a merchant&#39;s cart anfd a stern-looking washerwoman. You glance down at it, and it glances up at you. The little red dog gives you a happy bark and wag of its tail.&lt;/p&gt;
 
-&lt;p&gt;Are you sure you still want to take it to be butchered?&lt;/p&gt;
+&lt;p&gt;Are you sure you still want to take it to be butchered tomorrow?&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[...yes.|Butcher Dog Interlude Y]]&lt;/p&gt;
 
@@ -565,7 +571,7 @@ $(document).ready(function () {
 
 	window.previous_location=&quot;The Forum Romanum&quot;;
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="Obtain wine" tags="" position="3373,493.33333333333326" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="25" name="Obtain wine" tags="" position="3373,493" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;div class=&quot;passage_with_image&quot;&gt;
     &lt;div class=&quot;text&quot;&gt;
@@ -621,7 +627,7 @@ $(document).ready(function() {
 		$(&quot;#poet&quot;).show();
 	}
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="28" name="Wine Cart Dialogue" tags="" position="3620.6666666666665,995.6666666666666" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="28" name="Wine Cart Dialogue" tags="" position="3620,995" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;div id=&quot;attempt_1&quot; style=&quot;display: none;&quot;&gt;
 &lt;p&gt;
@@ -709,7 +715,7 @@ $(document).ready(function() {
 	}
 	&lt;% window.previous_location = &quot;Wine Cart&quot; %&gt;
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="No Money (Wine Cart)" tags="" position="3371.333333333333,779.6666666666666" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="29" name="No Money (Wine Cart)" tags="" position="3371,779" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;p&gt;
 Oops! It looks like you are out of money! You have only &lt;%= window.gold %&gt; of gold. That&#39;s not enough to buy wine for &lt;%= window.wine_price %&gt; gold.
@@ -730,7 +736,7 @@ You can keep try bargaining, or - if Cassius doesn&#39;t seem to lower his price
 [[Return to The Forum Romanum-&gt;The Forum Romanum]]
 &lt;/p&gt;
 
-&lt;% window.previous_location = &quot;No Money (Wine Cart)&quot; %&gt;</tw-passagedata><tw-passagedata pid="30" name="Ovid" tags="" position="3743.3333333333335,1166.3333333333333" size="100,100">&lt;h2&gt;The Public Trial&lt;/h2&gt;
+&lt;% window.previous_location = &quot;No Money (Wine Cart)&quot; %&gt;</tw-passagedata><tw-passagedata pid="30" name="Ovid" tags="" position="3743,1166" size="100,100">&lt;h2&gt;The Public Trial&lt;/h2&gt;
 &lt;p&gt;The man greets you with a twinkle in his eye.&lt;/p&gt;
 
 &lt;p&gt;&quot;Ah, you&#39;re much too young to be so chaste! Enjoy youth, enjoy women - that&#39;s my philosophy! It&#39;s all a game in the end.&quot; He looks at you thoughtfully. &lt;/p&gt;
@@ -745,9 +751,9 @@ You can keep try bargaining, or - if Cassius doesn&#39;t seem to lower his price
 
 &lt;script&gt;
 window.met_ovid=&quot;true&quot;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="31" name="Butcher Dog Interlude Y" tags="map" position="1758,1617" size="100,100">&lt;p&gt;You approach the butcher&#39;s stall, your little red dog at your heels. You bundle it up in your arms, and heft it up to the counter. You hand the butcher some money - your own, this time.&lt;/p&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="31" name="Butcher Dog Interlude Y" tags="map" position="1758,1617" size="100,100">&lt;p&gt;You lean down and pat the dog on the head. It barks happily. You start walking again, with it following your every step. It should follow you back to the temple.&lt;/p&gt;
 
-&lt;p&gt;You received the dog entrails! Robigus (and your master) will be pleased.&lt;/p&gt;
+&lt;p&gt;Robigus (and your master) will be pleased.&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Continue|Butcher]]&lt;/p&gt;
 
@@ -777,7 +783,7 @@ Your master probably won&#39;t be pleased withthis turn of events. Hopefully you
 
 &lt;p&gt; He quickly jumps into the villa, and almost as quickly returns. This Ovid guy must be something else, after all! The guard offers you a bottle of some alcoholic beverage.&lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Reach for the bottle|Wine (Party)]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="35" name="Last Attempt at the Wine Cart" tags="" position="3359.6666666666665,643" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+&lt;p class=&quot;passage_link&quot;&gt;[[Reach for the bottle|Wine (Party)]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="35" name="Last Attempt at the Wine Cart" tags="" position="3359,643" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
 
 &lt;p&gt;As soon you give him the scariest look and turn you back to leave, Cassius cries:
 &quot;Please don&#39;t leave!#gives you his last price: 150 golds for the jug. It looks like your bluff worked!&lt;/p&gt;
@@ -823,7 +829,7 @@ Oops! It looks like you are out of money! You have only &lt;%= window.gold %&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;
 [[Return to Rome-&gt;Forum Boarium]]
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="39" name="After Brothel" tags="" position="1763,1085.6666666666665" size="100,100">&lt;h2&gt;An Ugly House&lt;/h2&gt;
+&lt;/p&gt;</tw-passagedata><tw-passagedata pid="39" name="After Brothel" tags="" position="1763,1085" size="100,100">&lt;h2&gt;An Ugly House&lt;/h2&gt;
 
 &lt;p&gt;You stand in front of the main entrance to an ugly house, checking your possesions. While you were inside, you left your bag unkept and need to make sure, everything is inplace.&lt;/p&gt;
 
@@ -843,7 +849,7 @@ $(document).ready(function() {
 		window.wine = &quot;none&quot;;
 	}
 });
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="40" name="Untitled Passage 5" tags="" position="353,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Untitled Passage 6" tags="" position="243,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Untitled Passage 7" tags="" position="133,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Untitled Passage 8" tags="" position="23,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Untitled Passage 9" tags="" position="901,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Untitled Passage 10" tags="" position="791,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage 11" tags="" position="681,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Untitled Passage 12" tags="" position="571,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="Untitled Passage 13" tags="" position="461,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="49" name="Untitled Passage 14" tags="" position="351,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Untitled Passage 15" tags="" position="241,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 16" tags="" position="131,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Untitled Passage 17" tags="" position="21,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 18" tags="" position="901,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 19" tags="" position="791,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="55" name="Untitled Passage 20" tags="" position="681,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="56" name="Untitled Passage 21" tags="" position="571,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="57" name="Untitled Passage 22" tags="" position="461,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="Grape Juice" tags="" position="3549.3333333333335,1689" size="100,100">&lt;h2&gt;The Villa at Palatine Hill&lt;/h2&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="40" name="Untitled Passage 5" tags="" position="353,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Untitled Passage 6" tags="" position="243,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Untitled Passage 7" tags="" position="133,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Untitled Passage 8" tags="" position="23,33" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Untitled Passage 9" tags="" position="901,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Untitled Passage 10" tags="" position="791,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="46" name="Untitled Passage 11" tags="" position="681,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="47" name="Untitled Passage 12" tags="" position="571,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="48" name="Untitled Passage 13" tags="" position="461,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="49" name="Untitled Passage 14" tags="" position="351,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="50" name="Untitled Passage 15" tags="" position="241,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="51" name="Untitled Passage 16" tags="" position="131,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="52" name="Untitled Passage 17" tags="" position="21,145" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Untitled Passage 18" tags="" position="901,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 19" tags="" position="791,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="55" name="Untitled Passage 20" tags="" position="681,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="56" name="Untitled Passage 21" tags="" position="571,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="57" name="Untitled Passage 22" tags="" position="461,255" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="58" name="Grape Juice" tags="" position="3549,1689" size="100,100">&lt;h2&gt;The Villa at Palatine Hill&lt;/h2&gt;
 
 &lt;div class=&quot;passage_with_image&quot;&gt;
     &lt;div class=&quot;text&quot;&gt;
@@ -872,15 +878,79 @@ window.juice=&quot;received&quot;;
 
 &lt;script&gt;
 window.wine=&quot;good&quot;;
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="60" name="Flamen (Check)" tags="" position="2254,988" size="100,100">&lt;div id=&quot;complete&quot;&gt; [[Robigus 1]] &lt;/div&gt;
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="60" name="Flamen (Check)" tags="" position="2254,988" size="100,100">&lt;h2&gt;Your Fellow Slave&lt;/h2&gt;
+
+&lt;p&gt;You find your fellow slave in a back room in the temple. It seems like the search for your master has been getting him down.&lt;/p&gt;
+
+&lt;p&gt; He looks up as you walk in. 
+&quot;Let&#39;s see what you&#39;ve managed to get, then.&quot; &lt;/p&gt;
+
+&lt;div id=&quot;juice&quot;&gt;&quot;...grape juice? I know you understand what alcohol is. You do, right?&lt;/div&gt;
+
+&lt;div id=&quot;wine&quot;&gt;&quot;Oh, you&#39;ve gotten some wine! This&#39;ll be perfect for te ritual.&quot;&lt;/div&gt;
+
+&lt;div id=&quot;entrails&quot;&gt;&quot;Where did you get those entrails, out of a bin? They have to be fresh for the ritual. I suppose if we have nothing else...&quot;&lt;/div&gt;
+
+&lt;div id=&quot;dog&quot;&gt;&quot;Oh, what a cute dog! His entrails will do nicely.&quot;&lt;/div&gt;
+
+&lt;div id=&quot;old&quot;&gt;&quot;That&#39;s some old incense. Are you sure it still lights up?&quot;&lt;/div&gt;
+
+&lt;div id=&quot;incense&quot;&gt;&quot;Oh, that&#39;s some lovely smelling incense you got there! It&#39;ll add a nice atmosphere tomorrow, I&#39;m sure.&quot;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;div id=&quot;complete&quot;&gt; Looks like you have everything! [[Get ready for tomorrow|Robigus 1]] &lt;/div&gt;
 
 [[Go back |The Temple of Mars Ultor]] 
 
 &lt;script&gt;
+  
+  $(&quot;#juice&quot;).hide();
+  $(&quot;#wine&quot;).hide();
+  $(&quot;#entrails&quot;).hide();
+  $(&quot;#dog&quot;).hide();
+  $(&quot;#old&quot;).hide();
+  $(&quot;#incense&quot;).hide();
+  $(&quot;#complete&quot;).hide();
 
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="61" name="Untitled Passage 26" tags="" position="2212,751" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="62" name="Robigus 1" tags="" position="2032.3333333333333,834.6666666666666" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="63" name="one eventful Robigalia" tags="" position="2477,899.6666666666666" size="100,100">&lt;h2&gt;The Morning of 24th of April...&lt;/h2&gt;
 
-&lt;p&gt;Bright and early one April morning, a lesser Flamen bursts into your sleeping quarters. He huffs out, anxiously.&lt;/p&gt;
+  if(window.juice!=&quot;none&quot;)
+  {
+  	  $(&quot;#juice&quot;).show();
+  }
+  
+  if(window.wine!=&quot;none&quot;)
+  {
+  	  $(&quot;#wine&quot;).show();
+  }
+  
+  if(window.entrails!=&quot;none&quot;)
+  {
+  	  $(&quot;#entraisl&quot;).show();
+  }
+  
+  if(window.dog!=&quot;none&quot;)
+  {
+  	  $(&quot;#dog&quot;).show();
+  }
+  
+  if(window.old!=&quot;none&quot;)
+  {
+  	  $(&quot;#old&quot;).show();
+  }
+  
+  if(window.incense!=&quot;none&quot;)
+  {
+  	  $(&quot;#incense&quot;).show();
+  }
+  
+  function Check(a,b)
+  {
+  	return a!=&quot;none&quot;||b!=&quot;none&quot;;
+  }
+  
+&lt;/script&gt;</tw-passagedata><tw-passagedata pid="61" name="Robigus 1" tags="" position="2120,822" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="62" name="one eventful Robigalia" tags="" position="2477,899" size="100,100">&lt;h2&gt;The Morning of 24th of April...&lt;/h2&gt;
+
+&lt;p&gt;Bright and early one April morning, a fellow slave bursts into your sleeping quarters. He huffs in and out, anxiously.&lt;/p&gt;
 
 &lt;p&gt;&quot;The Flamen Quirenalis has gone missing, and the rites of Robigus must be performed tomorrow!&quot;&lt;/p&gt;
 
