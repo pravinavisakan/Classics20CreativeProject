@@ -10,233 +10,226 @@ Classics 20 Project
 <body>
 <div id="passage"></div>
 
-<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="0.25" format="Snowman" format-version="1.3.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">#passage {
-  color: #663931;
-  background-color: #ffebcc;
-  border-color: #ffffff;
-  padding: 15px;
-  border: solid transparent;
-  border-width: 0px 0px 0px 64px;
-  border-image: url('images/oliveBorder.png') 0 0 0 64 repeat;
-}
-
-p {
-  font-family: Roman;
-}
-
-.passage_link {
-  font-style: italic;
-}
-
-.passage_link > a {
-  border-color: #792f09;
-}
-
-strong {
-  font-family: "Roman Bold";
-}
-
-h2 {
-  font-family: Roman;
-  font-weight: bold
-}
-
-.passage_with_image {
-  display: flex;
-  flex-direction: row;
-}
-
-.passage_with_image > .text {
-  order: 1;
-}
-
-.passage_with_image > .image {
-  order: 2;
-  flex-basis:auto;
-  display: inline-flex;
-}
-
-.passage_with_image > .image img {
-  align-self: center;
-  padding: 15px;
-}
-
-@font-face {
-  font-family: Roman;
-  src: url('fonts/Cinzel-Regular.ttf');
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roman Bold";
-  src: url('fonts/Cinzel-Bold.ttf');
-  font-weight: bold;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">//logistical / state of the world
-window.day = "morning"; //morning, day, night
-window.gold = 15;
-window.previous_location = "Temple of Mars Ultor" 
-
-window.met_ovid = "false" //true, false
-window.seen_elephant = false;
-
-//item variables
-window.incense = "none"; // none, old, new
-window.entrails = "none"; //none, found
-window.dog_entrails = "none"; //either none, lured, butchered
-window.wine = "none"; // none, good, poor
-window.juice = "none"; //none, received
-
-//robigus episode
-window.ending="none"; // good, bad, meh
-
-//dog episode
-window.meat = "none"; //none, bait, sentimental
-
-// Wine episode
-window.wine_price = 15;
-window.wine_attempt = 0;
-window.wine_bought_once = false;
-window.wine_declined = false;</script><tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2500.0000000000005,497.3333333333333" size="100,100">&lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
-
-&lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Robert Gurval&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Written in Twine 2, with graphics made in Aseprite. Check out our crazy commit history at &lt;a href=&quot;https://github.com/pravinvisakan/Classics20CreativeProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Enjoy the game!&lt;/p&gt;
-
-&lt;p class=&quot;passage_link&quot;&gt;[[Start Game |Introduction]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Introduction" tags="" position="2500,702.3333333333334" size="100,100">&lt;h2&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;Your name is &lt;strong&gt;Gaius Pompeius&lt;/strong&gt;. Before your life in Rome, you were considered a renowned philosopher in your home of Athens. At least dozens of people had read your works! Convinced of your wisdom, you set out into the world to spread your word. After an unfortunate run-in with some coastal pirates, you&#39;ve ended up in the clutches of slavery. &lt;/p&gt;
-
-&lt;p&gt;Things could be slightly worse. Your master is the renowned Flamen Quirenalis, master of many religious ceremonies and rites in Rome. Life was pretty straight-forward, with simple domestic duties and a fat inheritance to look forward to when your old master wheezed his way through his last prayer.&lt;/p&gt;
-
-&lt;p&gt;That is, at least, until the eve of &lt;span class=&quot;passage_link&quot;&gt;[[one eventful Robigalia]]&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="3" name="The Temple of Mars Ultor" tags="map" position="2499.6666666666665,1092.6666666666667" size="100,100">&lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
-
-&lt;p&gt;
-Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. In the dim light coming from small windows and scarce candles statues of great Roman Gods — Mars Ultor and Venus Gentrix — glare at you.
-&lt;/p&gt;
-
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Take a closer look at the statues-&gt;Statues in the Temple of Mars Ultor]]
-&lt;/p&gt;
-
-&lt;p id=&quot;morning_time&quot;&gt;
-Bright light is coming from the main entrance. It looks like The Forum of Augustus is already full of people.
-&lt;br/&gt;
-Rome has awaken.
-&lt;/p&gt;
-
-&lt;p class=&quot;passage_link&quot;&gt;[[Check your progress|Flamen (Check)]]&lt;/p&gt;
-
-&lt;p class=&quot;passage_link&quot;&gt;[[Go outside-&gt;The Forum of Augustus]]&lt;/p&gt;
-
-&lt;script&gt;
-$(document).ready(function() {
-    if (window.day != &quot;morning&quot;) {
-	    $(&quot;#morning_time&quot;).hide();
+<tw-storydata name="Classics 20 Project" startnode="1" creator="Twine" creator-version="2.2.1" ifid="A67EABA2-BC28-4C4E-9A70-504ED5F434F7" zoom="0.25" format="Snowman" format-version="1.3.0" options="" hidden>
+  <style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+    #passage {
+      color: #663931;
+      background-color: #ffebcc;
+      border-color: #ffffff;
+      padding: 15px;
+      border: solid transparent;
+      border-width: 0px 0px 0px 64px;
+      border-image: url('images/oliveBorder.png') 0 0 0 64 repeat;
     }
-	window.previous_location = &quot;The Temple of Mars Ultor&quot;;
-});
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="4" name="The Forum of Augustus" tags="map" position="2499.3333333333335,1295" size="100,100">&lt;h2&gt;The Forum of Augustus&lt;/h2&gt;
-&lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
-&lt;p id=&quot;time&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;
-Framed between two marble galleries with statues of several Great Roman leaders, &lt;em&gt;summi viri&lt;/em&gt;, and the enormous Temple of Mars Ultor, the Forum of Augustus produces an impression worthy of a huge empire.
-&lt;/p&gt;
+    p {
+      font-family: Roman;
+    }
 
-&lt;p class=&quot;passage_link&quot;&gt;[[Take a closer look at the statues-&gt;Statues at Forum of Augustus]]&lt;/p&gt;
+    .passage_link {
+      font-style: italic;
+    }
 
-&lt;p&gt;
-You look around. Under the everwatchful gaze of Augustus, standing in the center of the Forum, political life flourishes and evolves. You see orators and lawyers, giving speeches; patricians conducting buisness; senators, discussing important issues of war and peace.
-&lt;/p&gt;
+    .passage_link > a {
+      border-color: #792f09;
+    }
 
-&lt;p&gt;
-You can watch the gears of Roman politics grind endlessly, powering greatest empire on Earth, but you soon remember your task and reality brings you back from the dreams - you need to get everything for Robigalia. You can probably find the items in the shops of Rome.
-&lt;/p&gt;
+    strong {
+      font-family: "Roman Bold";
+    }
 
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Head out into the Forum Romanum-&gt;The Forum Romanum]]
-&lt;/p&gt;
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Take a walk out to the Subura via Viscus Sandaliarus|Subura]]
-&lt;/p&gt;
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Return to the Temple of Mars Ultor-&gt;The Temple of Mars Ultor]]
-&lt;/p&gt;
+    h2 {
+      font-family: Roman;
+      font-weight: bold
+    }
 
-&lt;script&gt;
-$(document).ready(function() {
-	switch(window.day) {
-		case &quot;morning&quot;:
-		case &quot;day&quot;:
-			$(&quot;#time&quot;).text(&quot;The Forum is full of people, light and sounds.&quot;);
-			break;
-		default:
-			$(&quot;#time&quot;).hide();
-			break;
+    .passage_with_image {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .passage_with_image > .text {
+      order: 1;
+    }
+
+    .passage_with_image > .image {
+      order: 2;
+      flex-basis:auto;
+      display: inline-flex;
+    }
+
+    .passage_with_image > .image img {
+      align-self: center;
+      padding: 15px;
+    }
+
+    @font-face {
+      font-family: Roman;
+      src: url('fonts/Cinzel-Regular.ttf');
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Roman Bold";
+      src: url('fonts/Cinzel-Bold.ttf');
+      font-weight: bold;
+    }
+  </style>
+  <script role="script" id="twine-user-script" type="text/twine-javascript">
+    //logistical / state of the world
+    window.day = "morning"; //morning, day, night
+    window.gold = 15;
+    window.previous_location = "Temple of Mars Ultor" 
+
+    window.met_ovid = false; //true, false
+    window.seen_elephant = false;
+
+    //item variables
+    window.incense = "none"; // none, old, new
+    window.entrails = "none"; //none, found
+    window.dog_entrails = "none"; //either none, lured, butchered
+    window.wine = "none"; // none, good, poor
+    window.juice = "none"; //none, received
+
+    //robigus episode
+    window.ending="none"; // good, bad, meh
+
+    //dog episode
+    window.meat = "none"; //none, bait, sentimental
+
+    // Wine episode
+    window.wine_price = 15;
+    window.wine_attempt = 0;
+    window.wine_bought_once = false;
+    window.wine_declined = false;
+  </script>
+  <tw-passagedata pid="1" name="Robigalia - Start" tags="start" position="2500.0000000000005,497.3333333333333" size="100,100">
+    &lt;h2&gt; Robigalia: A Text-Adventure Game &lt;/h2&gt;
+
+    &lt;p&gt;A text adventure game set in Augustan Rome. Created by Pravin Visakan and Kirill Shumilov for the Winter 2018 Classics 20 class at UCLA, with &lt;a href=&quot;http://classics.ucla.edu/person/robert-gurval/&quot;&gt;Professor Robert Gurval&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Written in Twine 2, with graphics made in Aseprite. Check out our crazy commit history at &lt;a href=&quot;https://github.com/pravinvisakan/Classics20CreativeProject&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;Enjoy the game!&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Start Game|Introduction]]&lt;/p&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="2" name="Introduction" tags="" position="2500,702.3333333333334" size="100,100">
+    &lt;h2&gt;Introduction&lt;/h2&gt;
+
+    &lt;p&gt;Your name is &lt;strong&gt;Gaius Pompeius&lt;/strong&gt;. Before your life in Rome, you were considered a renowned philosopher in your home of Athens. At least dozens of people had read your works! Convinced of your wisdom, you set out into the world to spread your word. After an unfortunate run-in with some coastal pirates, you&#39;ve ended up in the clutches of slavery. &lt;/p&gt;
+
+    &lt;p&gt;Things could be slightly worse. Your master is the renowned Flamen Quirenalis, master of many religious ceremonies and rites in Rome. Life was pretty straight-forward, with simple domestic duties and a fat inheritance to look forward to when your old master wheezed his way through his last prayer.&lt;/p&gt;
+
+    &lt;p&gt;That is, at least, until the eve of &lt;span class=&quot;passage_link&quot;&gt;[[one eventful Robigalia]]&lt;/span&gt;&lt;/p&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="3" name="The Temple of Mars Ultor" tags="map" position="2499.6666666666665,1092.6666666666667" size="100,100">
+    &lt;h2&gt;Temple of Mars Ultor&lt;/h2&gt;
+
+    &lt;p&gt;Here you stand puzzled and scared under the high roof of the Temple of Mars the Avenger. In the dim light coming from small windows and scarce candles, the statues of great Roman Gods — Mars Ultor and Venus Gentrix — glare at you.&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Take a closer look at the statues-&gt;Statues in the Temple of Mars Ultor]]&lt;/p&gt;
+
+    &lt;p&gt;Bright light is coming from the main entrance. It looks like The Forum of Augustus is already full of people.&lt;br/&gt;Rome has awaken.&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Check your progress|Flamen (Check)]]&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Go outside-&gt;The Forum of Augustus]]&lt;/p&gt;
+
+    &lt;script&gt;
+    $(document).ready(function() {
+        if (window.day != &quot;morning&quot;) {
+            $(&quot;#morning_time&quot;).hide();
+        }
+        window.previous_location = &quot;The Temple of Mars Ultor&quot;;
+    });
+    &lt;/script&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="4" name="The Forum of Augustus" tags="map" position="2499.3333333333335,1295" size="100,100">
+    &lt;h2&gt;The Forum of Augustus&lt;/h2&gt;
+    &lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
+    &lt;p id=&quot;time&quot;&gt;&lt;/p&gt;
+
+    &lt;p&gt;Framed between two marble galleries with statues of several Great Roman leaders, &lt;em&gt;summi viri&lt;/em&gt;, and the enormous Temple of Mars Ultor, the Forum of Augustus produces an impression worthy of a huge empire.&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Take a closer look at the statues-&gt;Statues at Forum of Augustus]]&lt;/p&gt;
+
+    &lt;p&gt;You look around. Under the everwatchful gaze of Augustus, standing in the center of the Forum, political life flourishes and evolves. You see orators and lawyers, giving speeches; patricians conducting buisness; senators, discussing important issues of war and peace.&lt;/p&gt;
+
+    &lt;p&gt;You can watch the gears of Roman politics grind endlessly, powering greatest empire on Earth, but you soon remember your task and reality brings you back from the dreams - you need to get everything for Robigalia. You can probably find the items in the shops of Rome.&lt;/p&gt;
+
+    &lt;p class=&quot;passage_link&quot;&gt;[[Head out into the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;
+    &lt;p class=&quot;passage_link&quot;&gt;[[Take a walk out to the Subura via Viscus Sandaliarus|Subura]]&lt;/p&gt;
+    &lt;p class=&quot;passage_link&quot;&gt;[[Return to the Temple of Mars Ultor-&gt;The Temple of Mars Ultor]]&lt;/p&gt;
+
+    &lt;script&gt;
+    $(document).ready(function() {
+        switch(window.day) {
+	    case &quot;morning&quot;:
+            case &quot;day&quot;:
+                $(&quot;#time&quot;).text(&quot;The Forum is full of people, light and sounds.&quot;);
+                break;
+	    default:
+                $(&quot;#time&quot;).hide();
+                break;
 	}
 	
 	switch(window.previous_location) {
-		case &quot;The Temple of Mars Ultor&quot;:
-			$(&quot;#from&quot;).text (&quot;You exit the Temple of Mars Ultor and come down the steps to the center of the Forum of Augustus.&quot;);
-			break;
-		case &quot;The Forum Romanum&quot;:
-			$(&quot;#from&quot;).text(&quot;You pass through the Forum Julium and by the  Temple of Venus Gentrix and enter the Forum of Augustus.&quot;);
-			break;
-		default:
-			$(&quot;#from&quot;).hide();
-			break;
+	     case &quot;The Temple of Mars Ultor&quot;:
+                 $(&quot;#from&quot;).text (&quot;You exit the Temple of Mars Ultor and come down the steps to the center of the Forum of Augustus.&quot;);
+                 break;
+	     case &quot;The Forum Romanum&quot;:
+                 $(&quot;#from&quot;).text(&quot;You pass through the Forum Julium and by the  Temple of Venus Gentrix and enter the Forum of Augustus.&quot;);
+		 break;
+	     default:
+		 $(&quot;#from&quot;).hide();
+		 break;
 	}
-	window.previous_location=&quot;The Forum of Augustus&quot;;
-});
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="5" name="Wine Cart" tags="" position="3299.3333333333335,1000" size="100,100">&lt;h2&gt;At the Wine Cart&lt;/h2&gt;
+        window.previous_location=&quot;The Forum of Augustus&quot;;
+    });
+    &lt;/script&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="5" name="Wine Cart" tags="" position="3299.3333333333335,1000" size="100,100">
+    &lt;h2&gt;At the Wine Cart&lt;/h2&
+    &lt;div id=&quot;no_wine&quot;&gt;
+    	&lt;p&gt;As you come closer, Cassius notices you and shouts:&lt;br/&gt;&quot;&lt;em&gt;Salve&lt;/em&gt;, my dear friend, what brings you here? An empy jug to fill as usual?&quot;&lt;/p&gt;
+    
+    	&lt;p&gt;As you recall, Cassius&#39; wine is certainly not bad and will certainly please Robigus. Maybe Casius will you give you a discount for old friendship&#39;s sake.&lt;/p&gt;
+    
+    	&lt;p class=&quot;passage_link&quot;&gt;[[Tell Cassius your story-&gt;Wine Cart Dialogue]]&lt;/p&gt;
+    &lt;/div&gt;
+    
+    &lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Romanum-&gt;The Forum Romanum]]&lt;/p&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="6" name="Incense Store" tags="" position="2697.3333333333335,1700.6666666666667" size="100,100">
+    &lt;h2&gt;Spice Market&lt;/h2&gt;
+    
+    &lt;p&gt;As you explore this small spice market you see people all over the world: Greek, Latin, Egyptian, and many others. You hear as many languages as there are people in the market, including Greek, which soothes you ear and reminds you about your home country.&lt;/p&gt;
 
-&lt;div id=&quot;no_wine&quot;&gt;
-&lt;p&gt;
-As you come closer, Cassius notices you and shouts:&lt;br/&gt;
-&quot;&lt;em&gt;Salve&lt;/em&gt;, my dear friend, what brings you here? An empy jug to fill as usual?&quot;
-&lt;/p&gt;
+    &lt;p&gt;You tour around the market. Bags of precious seeds and powders fill the air with incredible smells, some of them you have never felt before. Pine kernels, pepper, leeks, celery seeds, parsley, lovage, dried mint, safflower, coriander, cardamon, ginger, and many more — one can find whatever his or her heart desires.&lt;/p&gt;
 
-&lt;p&gt;
-As you recall, Cassius&#39; wine is certainly not bad and will certainly please Robigus. Maybe Casius will you give you a discount for old friendship&#39;s sake.
-&lt;/p&gt;
+   &lt;p&gt;In the furthest corner of the market you find an old man, behind a tiny kiosk. You come closer to the kiosk and rejoice: you have found, frankincense, the best incense you can ever offer to a god! Robigus will be delighted!&lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Tell Cassius your story-&gt;Wine Cart Dialogue]]
-&lt;/p&gt;
-&lt;/div&gt;
+    &lt;p&gt;You approach the old trader, and ask for price for a small bag of frankincense. However, he doesn&#39;t seem to understand you! You try Greek, but it does not help either, but only make the old man smile. Eventually, the old man reaches for a small piece of coal and scribbles the price on a piece of wood. 15 assarii! That&#39;s a lot! You try to explain that you need a lower price, but the old man has no clue about what are you talking about... &lt;/p&gt;
 
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Return to the Forum Romanum-&gt;The Forum Romanum]]
-&lt;/p&gt;</tw-passagedata><tw-passagedata pid="6" name="Incense Store" tags="" position="2697.3333333333335,1700.6666666666667" size="100,100">&lt;h2&gt;Spice Market&lt;/h2&gt;
+    &lt;p&gt;It looks like you have no other choice but to purchase the bag.&lt;/p&gt;
 
-&lt;p&gt;As you explore this small spice market you see people all over the world: Greek, Latin, Egyptian, and many others. You hear as many languages as there are people in the market, including Greek, which soothes you ear and reminds you about your home country.&lt;/p&gt;
+    &lt;p class=&quot;passage_link&quot; id=&quot;enough_money&quot;&gt;[[Accept the price-&gt;Obtain Incense]]&lt;/p&gt;
+    &lt;p class=&quot;passage_link&quot; id=&quot;not_enough_money&quot;&gt;[[Accept the price-&gt;No Money (Insence Store)]]&lt;/p&gt;
+    &lt;p class=&quot;passage_link&quot;&gt;[[Return to the Forum Boarium-&gt;Forum Boarium]]&lt;/p&gt;
 
-&lt;p&gt;You tour around the market. Bags of precious, precious seeds and powders fill the air with incredible smells, some of them you have never felt before. Pine kernels, pepper, leeks, celery seeds, parsley, lovage, dried mint, safflower, coriander, cardamon, ginger, and many more — one can find whatever his or her heart desires.&lt;/p&gt;
-
-&lt;p&gt;In the furthest corner of the market you find an old man, behind a tiny kiosk. You come closer to the kiosk and rejoice: you have found, frankincense, the best incense you can ever offer to a god! Robigus will be delighted!&lt;/p&gt;
-
-&lt;p&gt;You approach the old trader, and ask for price for a small bag of frankincense. However, he doesn&#39;t seem to understand you! You try Greek, but it does not help either, but only make the old man smile. Eventually, the old man reaches for a small piece of coal and scribbles the price on a piece of wood. 15 assarii! That&#39;s a lot! You try to explain that you need a lower price, but the old man has no clue about what are you talking about... &lt;/p&gt;
-
-&lt;p&gt;It looks like you have no other choice but to purchase the bag.&lt;/p&gt;
-
-&lt;p class=&quot;passage_link&quot; id=&quot;enough_money&quot;&gt;[[Accept the price-&gt;Obtain Incense]]&lt;/p&gt;
-&lt;p class=&quot;passage_link&quot; id=&quot;not_enough_money&quot;&gt;[[Accept the price-&gt;No Money (Insence Store)]]&lt;/p&gt;
-&lt;p class=&quot;passage_link&quot;&gt;
-[[Return to the Forum Boarium-&gt;Forum Boarium]]
-&lt;/p&gt;
-
-&lt;script&gt;
-$(document).ready(function() {
+    &lt;script&gt;
+    $(document).ready(function() {
 	$(&quot;#not_enough_money&quot;).hide();
 	if (window.gold &lt; 15) {
-		$(&quot;#enough_money&quot;).hide();
-		$(&quot;#not_enough_money&quot;).show();
-	}
-});
-&lt;/script&gt;</tw-passagedata><tw-passagedata pid="7" name="Slave Shop" tags="" position="3098.6666666666665,1496" size="100,100">&lt;h2&gt;Forum Boarium&lt;/h2&gt;
-&lt;p&gt;The image is painfully familiar to you. You remember a day when you were, too, like them, put on the platform in front of crowd of moneybags, stripped off clothes, and sold to your current master, Flamen Quirenalis, who is now lost somewhere...&lt;/p&gt;
+	    $(&quot;#enough_money&quot;).hide();
+	    $(&quot;#not_enough_money&quot;).show();
+        }
+    });
+    &lt;/script&gt;
+  </tw-passagedata>
+  <tw-passagedata pid="7" name="Slave Shop" tags="" position="3098.6666666666665,1496" size="100,100">&lt;h2&gt;Forum Boarium&lt;/h2&gt;
+&lt;p&gt;The image is painfully familiar to you. You remember a day when you were, too, like them, put on the platform in front of crowd of moneybags, stripped off clothes, and sold to your current master, Flamen Quirinalis, who is now lost somewhere...&lt;/p&gt;
 
 &lt;p&gt;I swore to myself, that I will become a freedman one day, and will return back to Athens. However, you have already spent 5 years as a slave. Only gods can help you out of your misery...&lt;/p&gt;
 
@@ -248,7 +241,7 @@ $(document).ready(function() {
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Look over at the hawker-&gt;Slave Shop]]&lt;/p&gt;
 
-&lt;p&gt;From the small square in front of the Horrea two bridges cross the Tiber, followed by the road into Ager Romanus - the Roman suburbs. There, near the 5th milestone, is the cave, where the ritual of Robigalia is going to be conducted tomorrow. Maybe your reckless master, the Flamen Quirenalis is there, preparing for the festival?&lt;/p&gt;
+&lt;p&gt;From the small square in front of the Horrea two bridges cross the Tiber, followed by the road into Ager Romanus - the Roman suburbs. There, near the 5th milestone, is the cave, where the ritual of Robigalia is going to be conducted tomorrow. Maybe your reckless master, the Flamen Quirinalis is there, preparing for the festival?&lt;/p&gt;
 &lt;p class=&quot;passage_link&quot;&gt;[[Follow the road to the cave|Ager Romanus]]&lt;/p&gt;
 
 &lt;p id=&quot;elephant_scene&quot;&gt;You walk past the Horrea — a huge warehouse, filled with wine, olive oil and other goods - and see a tall gilded statue of Hercules, sparkling in the light of sun. Looking at a Greek hero, myths of whom you could listen endlessesly. Standing here in the middle of Rome, you get carried away by the memories of Greece and your carefree childhood in Athens.
@@ -363,7 +356,7 @@ You can hear something scuffling around towards the end of the alley.
 &lt;p&gt;&quot;Who you with?&quot; he grunts out.&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot; id=&quot;juice&quot;&gt;
-[[The Flamen Quirenalis himself!|Patrician N]]
+[[The Flamen Quirinalis himself!|Patrician N]]
 &lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot; id=&quot;poet&quot;&gt;[[uh, Ovid?|Patrician Y]]&lt;/p&gt;
@@ -527,7 +520,7 @@ You walk past the statues and read the inscriptions below them. Aeneas and Numit
 &lt;p id=&quot;from&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;
-If the Forum of Augusts is the brain of Rome, the Forum Romanum is its heart. One of the oldest squares in the city is filled with people, all wearing white togas, according to the latest law. Like industrious ants they move in a complex choreographed dance.
+If the Forum of Augustus is the brain of Rome, the Forum Romanum is its heart. One of the oldest squares in the city is filled with people, all wearing white togas, according to the latest law. Like industrious ants they move in a complex choreographed dance.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -553,7 +546,7 @@ You look around and see your friend Cassius behind his cart, selling wine to thi
 &lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;
-[[Go the Forum of Augusts-&gt;The Forum of Augustus]]
+[[Go the Forum of Augustus-&gt;The Forum of Augustus]]
 &lt;/p&gt;
 
 &lt;script&gt;
@@ -767,7 +760,7 @@ Your master probably won&#39;t be pleased withthis turn of events. Hopefully you
 [[Continue|Back Alley]] </tw-passagedata><tw-passagedata pid="33" name="Patrician N" tags="" position="3403.6666666666665,1696" size="100,100">&lt;h2&gt;The Villa at Palatine Hill&lt;/h2&gt;
 &lt;p&gt;The guard smirks.&lt;/p&gt;
 
-&lt;p&gt;&quot;The Flamen Quirenalis, uh? I got the thing for you.&quot;&lt;/p&gt;
+&lt;p&gt;&quot;The Flamen Quirinalis, uh? I got the thing for you.&quot;&lt;/p&gt;
 
 &lt;p&gt;He turns around, and yells through the noisy doorway, &quot;Oi! Get me something from the kid&#39;s bowl!&quot;&lt;/p&gt;
 
@@ -965,7 +958,7 @@ window.wine=&quot;good&quot;;
 
 &lt;p&gt;The morning of April 25th is bright and clear. This contrasts heavily with the ragged procession that makes it&#39;s way through the city towards the Ager Romanus.&lt;/p&gt;
 
-&lt;p&gt;Leading the charge is the Flamen Quirenlais himself. You&#39;re not sure where your fellow slave ended up finding him, but the strongg smell of wine drifting off of him gives you an idea. He mutters and shakes his head occasionally. You, the dog, and the other slave follow up behind him, hauling the materials you gathered.&lt;/p&gt;
+&lt;p&gt;Leading the charge is the Flamen Quirinlais himself. You&#39;re not sure where your fellow slave ended up finding him, but the strongg smell of wine drifting off of him gives you an idea. He mutters and shakes his head occasionally. You, the dog, and the other slave follow up behind him, hauling the materials you gathered.&lt;/p&gt;
 
 &lt;p&gt;Bringing up the rear is a small group of patricians, each in a similar state to the Flamen. Amongst them is a man you remember seeing at the forum occasionally - Ovid, the poet. You remember him having an appetite for the lecherous. As of now, the only thing he seems to be feeding on is a large bowl of porridge&lt;/p&gt;
 
@@ -1000,7 +993,7 @@ window.wine=&quot;good&quot;;
 
 &lt;p&gt;Bright and early one April morning, a fellow slave bursts into your sleeping quarters. He huffs in and out, anxiously.&lt;/p&gt;
 
-&lt;p&gt;&quot;The Flamen Quirenalis has gone missing, and the rites of Robigus must be performed tomorrow!&quot;&lt;/p&gt;
+&lt;p&gt;&quot;The Flamen Quirinalis has gone missing, and the rites of Robigus must be performed tomorrow!&quot;&lt;/p&gt;
 
 &lt;p&gt;This, as is explained to your sleepy self, was sort of a big deal. Robigus was apparently that divine combination of finicky and vital to life. He was lord of wheat rust, the blight that threatened Roman crops year after year. His ire could bring about doom to the entire empire.&lt;/p&gt;
 
