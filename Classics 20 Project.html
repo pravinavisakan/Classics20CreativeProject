@@ -294,6 +294,11 @@ $(document).ready(function() {
 
 &lt;script&gt;
 $(document).ready(function() {
+if(window.gold&lt;5)
+{
+	$(&quot;#meat&quot;).hide();
+	$(&quot;#butcher&quot;).text(&quot;But, looks like you can't afford his price. Maybe you could get lucky, and find some money on the ground!&quot;);
+}
 if(window.meat!=&quot;none&quot;)
 {
 	$(&quot;#meat&quot;).hide();
@@ -339,7 +344,7 @@ You can hear something scuffling around towards the end of the alley.
 &lt;p&gt;&quot;15 assarii, and all pleasures will be yours...&quot; says the woman as she gently grabs your hand, as you come close to the entrance to the ugly house.&lt;/p&gt;
 
 &lt;p&gt;Your reply:&lt;/p&gt;
-&lt;% if (window.gold &gt; 15) { %&gt;
+&lt;% if (window.gold &gt;= 15) { %&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p class=&quot;passage_link&quot;&gt;
 [[&quot;Maybe some other time.&quot; You free your arm and quickly return to the main street of the Subura-&gt;Subura]]
@@ -587,9 +592,9 @@ $(document).ready(function () {
 &lt;% window.wine = &quot;good&quot; %&gt;
 &lt;% window.wine_bought_once = true %&gt;</tw-passagedata><tw-passagedata pid="26" name="Subura" tags="" position="1996,1299.6666666666667" size="100,100">&lt;h2&gt;Subura&lt;/h2&gt;
 
-&lt;p&gt;You enter one of the notorious districts of Rome — Subura — and immediately notice that the light from the Sun, during this bright day, seems to dim, and the air grows dumpy and musty. The atmosphere feels like it can be cut by a knife. Bright, marble and monumental, though light and fresh, temples and public buildings on the fora in the center of Rome transform into dirty and delapidated, scared by fires and floods, &lt;em&gt;insulas&lt;/em&gt; - witnesses of the several disasterous events Rome had to endure.&lt;/p&gt;
+&lt;p&gt;You enter one of the notorious districts of Rome — Subura — and immediately notice that the light from the Sun, during this bright day, seems to dim, and the air grows dumpy and musty. The atmosphere feels like it can be cut by a knife. Bright, marble temples and public buildings in the fora in the center of Rome transform into dirty and delapidated, witnesses of the several disasterous events Rome had to endure and seemingly scared by them - *insulas*.&lt;/p&gt;
 
-&lt;p&gt;As you move deeper into the district the streets and alleys get narrower, while the number of people on them stays the same. Beggars, bandits, traders, slaves, and many others — the poorest populus of Rome lives in this part of the city.&lt;/p&gt;
+&lt;p&gt;As you move deeper into the district, the streets and alleys get narrower, while the number of people on them stays the same. Beggars, bandits, traders, slaves, and many others — the poorest populus of Rome lives in this part of the city.&lt;/p&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Dip into a back alley|Back Alley]]&lt;/p&gt;
 
@@ -848,7 +853,7 @@ $(document).ready(function() {
 	}
 });
 &lt;/script&gt;</tw-passagedata><tw-passagedata pid="40" name="Grape Juice" tags="" position="3502.3333333333335,1890.6666666666667" size="100,100">&lt;h2&gt;The Villa at Palatine Hill&lt;/h2&gt;
-
+That is, at least, until the eve of one even
 &lt;div class=&quot;passage_with_image&quot;&gt;
     &lt;div class=&quot;text&quot;&gt;
 		&lt;p&gt;You received Grape Juice! It&#39;s not quite wine, but what would Robigus know? He&#39;s the god of wheat rust, not grapes.&lt;/p&gt;
