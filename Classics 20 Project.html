@@ -901,7 +901,7 @@ window.wine=&quot;good&quot;;
 &lt;div id=&quot;incense&quot;&gt;&lt;p&gt;&quot;Oh, that&#39;s some lovely smelling incense you got there! It&#39;ll add a nice atmosphere tomorrow, I&#39;m sure.&quot;&lt;/p&gt;&lt;/div&gt;
 
 &lt;div id=&quot;incomplete&quot;&gt;&lt;p&gt;Looks like you still have work to do!&lt;/p&gt;&lt;/div&gt;
-&lt;div id=&quot;complete&quot;&gt;&lt;p&gt;Looks like you have everything! &lt;span  class=&quot;passage_link&gt;[[Get ready for tomorrow|Robigus 1]]&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;div id=&quot;complete&quot;&gt;&lt;p&gt;Looks like you have everything! &lt;span class=&quot;passage_link&quot;&gt;[[Get ready for tomorrow|Robigus 1]]&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Go back|The Temple of Mars Ultor]]&lt;/p&gt;
 
@@ -928,7 +928,7 @@ window.wine=&quot;good&quot;;
   
   if(window.entrails!=&quot;none&quot;)
   {
-        $(&quot;#entraisl&quot;).show();
+        $(&quot;#entrails&quot;).show();
   }
   
   if(window.dog_entrails!=&quot;none&quot;)
@@ -950,13 +950,14 @@ window.wine=&quot;good&quot;;
   var badCount=0;
   function Check(a,b)
   {
-      if(a!=&quot;none&quot;){window.badCount--;}
-    if(b!=&quot;none&quot;){window.goodCount++;}
+	//incense is a special case
+      if(a!=&quot;none&quot;&amp;&amp;a!=&quot;new&quot;){window.badCount++;}
+    if(b!=&quot;none&quot;&amp;&amp;b!=&quot;old&quot;){window.goodCount++;}
     
     return a!=&quot;none&quot;||b!=&quot;none&quot;;
   }
   
-  if(Check(window.juice, window.wine)&amp;&amp;Check(window.entrails, window.dog_entrails)&amp;&amp;Check(window.old, window.incense))
+  if(Check(window.juice, window.wine)&amp;&amp;Check(window.entrails, window.dog_entrails)&amp;&amp;Check(window.incense, window.incense))
   {
       $(&quot;#complete&quot;).show();
     $(&quot;#incomplete&quot;).hide();
@@ -970,9 +971,9 @@ window.wine=&quot;good&quot;;
 
 &lt;p&gt;The morning of April 25th is bright and clear. This contrasts heavily with the ragged procession that makes it&#39;s way through the city towards the Ager Romanus.&lt;/p&gt;
 
-&lt;p&gt;Leading the charge is the Flamen Quirinlais himself. You&#39;re not sure where your fellow slave ended up finding him, but the strongg smell of wine drifting off of him gives you an idea. He mutters and shakes his head occasionally. You, the dog, and the other slave follow up behind him, hauling the materials you gathered.&lt;/p&gt;
+&lt;p&gt;Leading the charge is the Flamen Quirinalis himself. You&#39;re not sure where your fellow slave ended up finding him, but the strong smell of wine drifting off of him gives you an idea. He mutters and shakes his head occasionally. You  and the other slave follow up behind him, hauling the materials you've gathered.&lt;/p&gt;
 
-&lt;p&gt;Bringing up the rear is a small group of patricians, each in a similar state to the Flamen. Amongst them is a man you remember seeing at the forum occasionally - Ovid, the poet. You remember him having an appetite for the lecherous. As of now, the only thing he seems to be feeding on is a large bowl of porridge&lt;/p&gt;
+&lt;p&gt;Bringing up the rear is a small group of patricians, each in a similar state to the Flamen. Amongst them is a man you remember seeing at the forum occasionally - Ovid, the poet. You remember him having a rather lecherous appetite. As of now, the only thing he seems to be feeding on is a large bowl of porridge&lt;/p&gt;
 
 &lt;p&gt;Eventually, your party reaches the cave.&lt;/p&gt;
 
@@ -1044,10 +1045,10 @@ Congratulations! You&#39;ve saved Rome&#39;s harvest from the ravages of wheat r
 
 &lt;p class=&quot;passage_link&quot;&gt;[[Start Page|Robigalia - Start]]&lt;/p&gt;</tw-passagedata><tw-passagedata pid="46" name="Robigus M" tags="" position="2102.666666666667,596" size="100,100">&lt;h2&gt;The Ritual&lt;/h2&gt;
 
-&lt;p&gt;Within the cave, you and your fellow quickly start preparations. he drink is poured, the incense lit, and the entrails are prepared. You spare yourself the grisly sight. You focus on building the fire, tall and imposing. &lt;/p&gt;
+&lt;p&gt;Within the cave, you and your fellow quickly start preparations. The drink is poured, the incense lit, and the entrails are prepared. You spare yourself the grisly sight. You focus on building the fire, tall and imposing. &lt;/p&gt;
 
 &lt;p&gt;
-Your master begins the incantations. Though the morning air is clear, they seem to fall somewhat flat. One by one, he feeds the goods that you gathered into the flames. With each one, you don&#39;t really feel any of the cosmic presence you expected. In fact, things are rather boring. You suppress a yawn. 
+Your master begins the incantations. Though the morning air is clear, his voice seems to lack its usual volume. One by one, he feeds the goods that you gathered into the flames. With each one, you don&#39;t really feel any of the cosmic energy or divine presence you expected. In fact, the whole affair is rather boring. You suppress a yawn. 
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -1055,11 +1056,11 @@ The flamen finishes his benedictions and prayers for a fruitful harvest. Suddenl
 &lt;/p&gt;
 
 &lt;p&gt;
-A vulture is perched on a tree outside the cave. You creep towards it, past bored patricians, pensive. Could it be a messager from the gods? Y
+A vulture is perched on a tree outside the cave. You creep slowly out of the cave towards it, past bored patricians. Could it be a messager from the gods? 
 &lt;/p&gt;
 
 &lt;p&gt;
-Seeing your approach, the bird caws again, and flies off. It seems ambivalent, almost as bored as you are. Maybe something could have gone better?
+Seeing your approach, the bird caws, and flies off. It seems ambivalent, almost as bored as you are. Maybe something could have gone better?
 &lt;/p&gt;
 
 &lt;p&gt;
