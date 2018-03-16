@@ -1,6 +1,12 @@
-## On Text Games and Augustan Rome
+Pravin Visakan
 
-If there's one thing I learned in Classics 20, it's that game development is an invlved process.
+Classics 20 2018
+
+Professor 2018
+
+### On Text Games and Augustan Rome
+
+If there's one thing I learned in Classics 20, it's that game development is an involved process.
 
 Our group for the creative project consisted of two people - myself (Pravin Visakan), and a friend from another section (Kirill Shumilov). I knew from the moment I saw the guidelines that we would try some sort of interactive text story. Robigalia, from lecture, seemed to be the perfect setting for a story - an irate deity of wheat rust seemed both comical and dangerous at the same time.
 
