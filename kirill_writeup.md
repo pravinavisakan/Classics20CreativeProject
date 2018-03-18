@@ -1,6 +1,6 @@
-Kirill Shumilov
-UCLA Classics 20, Winter Quarter 2018
-Creative Project
+Kirill Shumilov     
+UCLA Classics 20, Winter Quarter 2018     
+Creative Project  
 
 ## An Adventure into Roman Text-Based Game Building
 
